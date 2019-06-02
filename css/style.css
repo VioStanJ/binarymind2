@@ -100,3 +100,41 @@ header>img{
     }
 }
 /* Flash end */
+
+/* Content */
+.content>div{
+    /* height: 80px; */
+}
+.logo{
+    height: 80vh;
+}
+.logo>img:nth-child(1){
+    width: 130%;
+    height: 100%;
+    margin-left: -30%;
+}
+/* END Content */
+
+/* .menu */
+#menu{
+    padding: 10px;
+}
+.list{
+    margin-top: 12px!important;
+    float: right;
+    margin-right: 60px;
+}
+.list>li{
+    margin-left: 30px;
+    display: inline;
+}
+.list>li>a{
+    font-size: 22px;
+    color: white;
+    font-weight: 400;
+}
+.list>li>a:hover{
+    color: #387DE6;
+    text-decoration: none!important;
+}
+/* END .menu */

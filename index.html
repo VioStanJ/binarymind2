@@ -3,9 +3,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/IMSAtomic2.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/media.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <title>Binary mind</title>
 </head>
@@ -17,15 +18,35 @@
     </div>
         
     <header>
-        <nav class="sticky  ">
-            <div class="container">
-                <div class="drawer">
-                    <div class="hamburger">
-            
+        <div class="sticky">
+            <nav id="menu">
+                <div class="container">
+                    <div class="drawer">
+                        <div class="hamburger">
+                            
+                        </div>
+                    </div>
+                    <ul class="list">
+                        <li><a href="#"  id="test">Home</a></li>
+                        <li><a href="">Our Promo</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="content fxr">
+                <div class="bd bs30 logo">
+                    <img src="img/portlogo.svg" alt="">
+                </div>
+                <div class="bs50 fx alit_center">
+                    <div class="slogan">
+                        <h1 id="bm">Binary Mind Promo</h1>
+                        <h3 id="sl">Our Slogan Is The Best Of The World !   </h3>
                     </div>
                 </div>
+                <div class="bd bs20"></div>
             </div>
-        </nav>
+        </div>
         <img src="img/trace.svg" alt="">
     </header>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt placeat asperiores praesentium mollitia, molestiae non possimus debitis, nemo veniam perspiciatis natus at? Voluptas veritatis voluptates omnis labore, officia sequi? Nemo.</p>
@@ -41,12 +62,12 @@
                 });
             });
     
-            window.onload = function(){
-            var logo = document.getElementById("logo");
-                TweenMax.to('#bm',3,{opacity:1,ease : Elastic.easeOut.config(1, 1),x:100,delay:1});
-                TweenMax.to('#sl',3.5,{opacity:1,ease : Elastic.easeOut.config(1, 1),y:30,delay:1.6});
-                TweenMax.to('#minicontent>div:nth-child(2)',5,{opacity:1,scale:1,ease: Elastic.easeOut.config(1,0.3),delay:1.3});
-            }
+            // window.onload = function(){
+            // var logo = document.getElementById("logo");
+            //     TweenMax.to('#bm',3,{opacity:1,ease : Elastic.easeOut.config(1, 1),x:100,delay:1});
+            //     TweenMax.to('#sl',3.5,{opacity:1,ease : Elastic.easeOut.config(1, 1),y:30,delay:1.6});
+            //     TweenMax.to('#minicontent>div:nth-child(2)',5,{opacity:1,scale:1,ease: Elastic.easeOut.config(1,0.3),delay:1.3});
+            // }
         </script>
 </body>
 </html>
