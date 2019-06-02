@@ -1,0 +1,288 @@
+/* 
+    Author : INNOSAINT Marcus Seginio
+    Co-Author : GUERRIER Vio Stanoj
+    Name : IMSAtomic
+    Date : 03-MAR-2019
+    Version : 0.2
+*/
+*{
+    box-sizing: border-box;
+}
+video,html,head,body,header,section,article,a,nav,div,span,p,a,ul,li,strong,main,footer,h1,h2,h3,h4,img,button,input,label,select,option{
+	margin:0;
+	padding:0;
+	text-decoration: none;
+	list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    padding: 5px;
+}
+::-webkit-scrollbar{
+	width: 10px;
+	height: 10px;
+}
+::-webkit-scrollbar-track{
+  background-color: transparent;
+  background: white;
+}
+::-webkit-scrollbar-thumb{
+	background-color: #cccccc;
+}
+::-webkit-scrollbar-thumb:hover{
+	background-color: #bababa;
+}
+i{
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	background-position: cover;
+}
+.db_sp{
+	min-height: 60px;
+}
+.sp{
+	min-height: 30px;
+}
+.mn_sp{
+	min-height: 15px;
+}
+.bd{
+	border:1px solid black;
+}
+.blc{
+	display: block!important;
+}
+.in_blc{
+	display:inline-block;
+}
+.fw{
+	width: 100%;
+}
+.fh{
+	height: 100%;
+}
+.clr{
+	clear:both;
+}
+.ptn{
+	cursor: pointer!important;
+}
+.center{
+	text-align:center;
+}
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox,select,button {
+-webkit-appearance: none;
+border-radius: 0;
+}
+.hidden{
+	visibility: hidden;
+}
+/* Flex Box Part */
+.fx{
+  display: flex;
+}
+.fxc{
+	display: flex!important;
+	flex-direction: column!important;
+}
+.fxr{
+	display: flex!important;
+	flex-direction: row!important;
+}
+.jus_center{
+	justify-content: center!important;
+}
+.jus_end{
+	justify-content: flex-end!important;
+}
+.jus_start{
+	justify-content: flex-start!important;
+}
+.alit_center{
+	align-items: center!important;
+}
+.alit_end{
+	align-items: flex-end!important;
+}
+.alit_start{
+	align-items: flex-start!important;
+}
+.center_all{
+	justify-content: center!important;
+	align-items: center!important;
+}
+.sf_center{
+	align-self: center!important;
+}
+.sf_end{
+	align-self: flex-end!important;
+}
+.sf_start{
+	align-self: flex-start!important;
+}
+.gw{flex-grow: 1;}
+.xgw{flex-grow: 0;}
+.shk{flex-shrink: 1;}
+.xshk{flex-shrink: 0;}
+.ard{justify-content: space-around;}
+.btw{justify-content: space-between;}
+.xovf{
+	overflow: hidden;
+}
+.ovf{
+	overflow: auto;
+}
+/* No Treat */
+.ready-motion-none{
+    /* if you don't want to use `display:none` */
+    /* here you can add your own animation to it */
+    visibility: hidden;
+    height:0;
+    width:0;
+    margin:0;
+    padding:0;
+}
+.bs5{flex-basis: 5%;}
+.bs10{flex-basis: 10%;}
+.bs15{flex-basis: 15%;}
+.bs20{flex-basis: 20%;}
+.bs25{flex-basis: 25%;}
+.bs30{flex-basis: 30%;}
+.bs35{flex-basis: 35%;}
+.bs40{flex-basis: 40%;}
+.bs45{flex-basis: 45%;}
+.bs50{flex-basis: 50%;}
+.bs55{flex-basis: 55%;}
+.bs60{flex-basis: 60%;}
+.bs65{flex-basis: 65%;}
+.bs70{flex-basis: 70%;}
+.bs75{flex-basis: 75%;}
+.bs80{flex-basis: 80%;}
+.bs85{flex-basis: 85%;}
+.bs90{flex-basis: 90%;}
+.bs95{flex-basis: 95%;}
+.bs100{flex-basis: 100%;}
+/* Media Basis */
+@media (max-width: 767px) {
+    .ctn {
+      max-width: 98%;
+      margin: auto;
+      background: darkgreen;
+    }
+    .xs{
+        flex-basis: 100%;
+    }
+    .xs5{flex-basis: 5%;}
+    .xs10{flex-basis: 10%;}
+    .xs15{flex-basis: 15%;}
+    .xs20{flex-basis: 20%;}
+    .xs25{flex-basis: 25%;}
+    .xs30{flex-basis: 30%;}
+    .xs35{flex-basis: 35%;}
+    .xs40{flex-basis: 40%;}
+    .xs45{flex-basis: 45%;}
+    .xs50{flex-basis: 50%;}
+    .xs55{flex-basis: 55%;}
+    .xs60{flex-basis: 60%;}
+    .xs65{flex-basis: 65%;}
+    .xs70{flex-basis: 70%;}
+    .xs75{flex-basis: 75%;}
+    .xs80{flex-basis: 80%;}
+    .xs85{flex-basis: 85%;}
+    .xs90{flex-basis: 90%;}
+    .xs95{flex-basis: 95%;}
+    .xs100{flex-basis: 100%;}
+    .xxs{display: none!important;}
+  }
+  
+  @media (min-width: 768px) {
+    .ctn {
+      max-width: 720px;
+      margin: auto;
+      background: burlywood;
+    }
+    .md5{flex-basis: 5%;}
+    .md10{flex-basis: 10%;}
+    .md15{flex-basis: 15%;}
+    .md20{flex-basis: 20%;}
+    .md25{flex-basis: 25%;}
+    .md30{flex-basis: 30%;}
+    .md35{flex-basis: 35%;}
+    .md40{flex-basis: 40%;}
+    .md45{flex-basis: 45%;}
+    .md50{flex-basis: 50%;}
+    .md55{flex-basis: 55%;}
+    .md60{flex-basis: 60%;}
+    .md65{flex-basis: 65%;}
+    .md70{flex-basis: 70%;}
+    .md75{flex-basis: 75%;}
+    .md80{flex-basis: 80%;}
+    .md85{flex-basis: 85%;}
+    .md90{flex-basis: 90%;}
+    .md95{flex-basis: 95%;}
+    .md100{flex-basis: 100%;}
+    .xmd{display: none!important;}
+  }
+  
+  @media (min-width: 992px) {
+    .ctn {
+      max-width: 960px;
+      margin: auto;
+      background: darkorchid;
+    }
+    .sm5{flex-basis: 5%;}
+    .sm10{flex-basis: 10%;}
+    .sm15{flex-basis: 15%;}
+    .sm20{flex-basis: 20%;}
+    .sm25{flex-basis: 25%;}
+    .sm30{flex-basis: 30%;}
+    .sm35{flex-basis: 35%;}
+    .sm40{flex-basis: 40%;}
+    .sm45{flex-basis: 45%;}
+    .sm50{flex-basis: 50%;}
+    .sm55{flex-basis: 55%;}
+    .sm60{flex-basis: 60%;}
+    .sm65{flex-basis: 65%;}
+    .sm70{flex-basis: 70%;}
+    .sm75{flex-basis: 75%;}
+    .sm80{flex-basis: 80%;}
+    .sm85{flex-basis: 85%;}
+    .sm90{flex-basis: 90%;}
+    .sm95{flex-basis: 95%;}
+    .sm100{flex-basis: 100%;}
+    .xsm{display: none!important;}
+  }
+  
+  @media (min-width: 1200px) {
+    .ctn {
+      max-width: 1140px;
+      background: darkkhaki;
+    }
+    .lg5{flex-basis: 5%;}
+    .lg10{flex-basis: 10%;}
+    .lg15{flex-basis: 15%;}
+    .lg20{flex-basis: 20%;}
+    .lg25{flex-basis: 25%;}
+    .lg30{flex-basis: 30%;}
+    .lg35{flex-basis: 35%;}
+    .lg40{flex-basis: 40%;}
+    .lg45{flex-basis: 45%;}
+    .lg50{flex-basis: 50%;}
+    .lg55{flex-basis: 55%;}
+    .lg60{flex-basis: 60%;}
+    .lg65{flex-basis: 65%;}
+    .lg70{flex-basis: 70%;}
+    .lg75{flex-basis: 75%;}
+    .lg80{flex-basis: 80%;}
+    .lg85{flex-basis: 85%;}
+    .lg90{flex-basis: 90%;}
+    .lg95{flex-basis: 95%;}
+    .lg100{flex-basis: 100%;}
+    .xlg{display: none!important;}
+    .xsm{display: block!important;}
+  }
