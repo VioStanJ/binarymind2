@@ -108,7 +108,7 @@ header>img{
 .logo{
     height: 80vh;
 }
-.logo>img:nth-child(1){
+.logo>img{
     width: 130%;
     height: 100%;
     margin-left: -30%;
@@ -150,17 +150,19 @@ header>img{
 }
 .slogan>h1{
     color: white;
-    font-size: 42px;
+    font-size: 4.2rem;
     font-weight: bold;
     opacity: 0;
     z-index: 1;
     margin-left: -100px;
     white-space: nowrap;
+    width: 100%;
 }
 .slogan>h3{
     color: white;
     margin-left: 100px;
     font-weight: 400;
+    font-size: 2.4rem;
     margin-top: -40px;
     opacity: 0;
     white-space: nowrap;

@@ -1,3 +1,12 @@
+@media screen and (max-width: 768px){
+    .list{
+        display: none;
+    }
+    .logo>img{
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1024px){
     .list{
         display: none;
