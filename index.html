@@ -12,6 +12,8 @@
 </head>
 <body>
 
+    <div class="overlay"></div>
+
     <div class="flash">
         <img src="img/flash.svg" width="60px" alt="" class="ptn">
         <p></p>
@@ -57,8 +59,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
     <script>
             $(document).ready(function(){
+                var op = false;
+
                 $('.drawer').click(function(){
                     $('.drawer').toggleClass('active');
+                    if(op){
+                        $('.overlay').width('0%');
+                        $('body').css('overflow','hidden');
+                        op = false;
+                    }else{
+                        $('.overlay').width('100%');
+                        $('body').css('overflow','hidden');
+                        op = true;
+                    }
                 });
             });
     
