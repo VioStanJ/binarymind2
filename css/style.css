@@ -137,6 +137,11 @@ header>img{
     color: #387DE6;
     text-decoration: none!important;
 }
+.fix_stick {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 /* END .menu */
 
 /* Slogan */
