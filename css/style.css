@@ -138,3 +138,26 @@ header>img{
     text-decoration: none!important;
 }
 /* END .menu */
+
+/* Slogan */
+.slogan{
+    margin-top: -90px;
+}
+.slogan>h1{
+    color: white;
+    font-size: 42px;
+    font-weight: bold;
+    opacity: 0;
+    z-index: 1;
+    margin-left: -100px;
+    white-space: nowrap;
+}
+.slogan>h3{
+    color: white;
+    margin-left: 100px;
+    font-weight: 400;
+    margin-top: -40px;
+    opacity: 0;
+    white-space: nowrap;
+}
+/* END Slogan */
