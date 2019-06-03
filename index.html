@@ -12,7 +12,18 @@
 </head>
 <body>
 
-    <div class="overlay"></div>
+    <div class="overlay fxr">
+        <div class="bs50 dwcl"></div>
+        <div class="bs50">
+            <ul class="drw_list fxc center_all">
+                <li><a href="#"  id="test">Home</a></li>
+                <li><a href="">Our Promo</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <p class="white center"><i>@ Binary Mind</i></p>
+        </div>
+    </div>
 
     <div class="flash">
         <img src="img/flash.svg" width="60px" alt="" class="ptn">
@@ -29,7 +40,7 @@
                         </div>
                     </div>
                     <ul class="list">
-                        <li><a href="#"  id="test">Home</a></li>
+                        <li><a href="#">Home</a></li>
                         <li><a href="">Our Promo</a></li>
                         <li><a href="">Blog</a></li>
                         <li><a href="">Contact</a></li>
@@ -72,6 +83,13 @@
                         $('body').css('overflow','hidden');
                         op = true;
                     }
+                });
+
+                $('.dwcl').on('click',function(){
+                    $('.overlay').width('0%');
+                        $('body').css('overflow','hidden');
+                        op = false;
+                        $('.drawer').toggleClass('active');
                 });
             });
     
