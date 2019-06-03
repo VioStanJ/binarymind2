@@ -134,6 +134,7 @@ header>img{
     font-size: 22px;
     color: white;
     font-weight: 400;
+    text-decoration: none!important;
 }
 .list>li>a:hover{
     color: #39E6FE;
@@ -205,5 +206,6 @@ header>img{
 }
 .drw_list>li>a:hover{
     color: #39E6FE;
+    text-decoration: none!important;
 }
 /* END Overlay */
