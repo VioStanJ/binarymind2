@@ -238,11 +238,11 @@ header>img{
 /* Promo */
 .imgPromo{
     width: 100%;
-    height: 500px;
+    height: auto;
 }
 .imgPromo>img{
     width: 100%;
-    height: 500px;
+    height: auto;
 }
 
 .effect2
