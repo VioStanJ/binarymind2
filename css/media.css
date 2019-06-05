@@ -11,4 +11,7 @@
     .list{
         display: none;
     }
+    .news{
+        width: 90%!important;
+    }
 }
