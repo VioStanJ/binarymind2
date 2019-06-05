@@ -62,7 +62,16 @@
         </div>
         <img src="img/trace.svg" alt="">
     </header>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt placeat asperiores praesentium mollitia, molestiae non possimus debitis, nemo veniam perspiciatis natus at? Voluptas veritatis voluptates omnis labore, officia sequi? Nemo.</p>
+    
+    <div class="container bd">
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8 bd">
+                <img src="img/quotes.svg" alt="">
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+    </div>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -76,7 +85,7 @@
                     $('.drawer').toggleClass('active');
                     if(op){
                         $('.overlay').width('0%');
-                        $('body').css('overflow','hidden');
+                        $('body').css('overflow','auto');
                         op = false;
                     }else{
                         $('.overlay').width('100%');
@@ -87,7 +96,7 @@
 
                 $('.dwcl').on('click',function(){
                     $('.overlay').width('0%');
-                        $('body').css('overflow','hidden');
+                        $('body').css('overflow','auto');
                         op = false;
                         $('.drawer').toggleClass('active');
                 });
