@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
     <title>Binary mind</title>
 </head>
 <body>
@@ -25,9 +26,21 @@
         </div>
     </div>
 
-    <div class="flash">
-        <img src="img/flash.svg" width="60px" alt="" class="ptn">
+    <div class="flash" id="fls_cont">
+        <img src="img/flash.svg" width="60px" id="flash" class="ptn">
         <p></p>
+    </div>
+
+    <div id="fk_line">
+        <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+    </div>
+
+    <div id="sh_line">
+        <a href="#"><i class="fas fa-share-alt fa-2x fa-rotate-180"></i></a>
+    </div>
+
+    <div id="wh_line">
+        <a href="#"><i class="fas fab fa-whatsapp fa-2x fa-rotate-270" style="color: green;"></i></a>
     </div>
         
     <header class="xovf">
@@ -49,7 +62,7 @@
             </nav>
             <div class="content fxr sl_main">
                 <div class="bs30 logo">
-                    <img src="img/portlogo.svg" alt="">
+                    <img src="img/portlogo.svg" alt="binarymind logo with background">
                 </div>
                 <div class="bs50 fx alit_center">
                     <div class="slogan">
@@ -136,12 +149,12 @@
     <footer class="fxc">
         <div class="bs80 fxr">
             <div class="bs50">
-                <img src="img/pin.svg" class="pin" alt="" srcset="">
+                <img src="img/pin.svg" class="pin" alt="email" srcset="">
                 <a href="mailto:binarymind@promo.com" class="pina">E-mail : binarymind@promo.com</a>
             </div>
             <div class="bs50 fx jus_end">
                 <a href="" class="jusa">Web Masters</a>
-                <img src="img/jus.svg" class="jus" alt="" srcset="">
+                <img src="img/jus.svg" class="jus" alt="Web Masters" srcset="">
             </div>
         </div>
         <div class="fx bs20 rsd center_all">
@@ -153,7 +166,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/js/all.min.js"></script>
     <script>
+        var flDat = false;
             $(document).ready(function(){
                 var op = false;
 
@@ -176,6 +191,18 @@
                         op = false;
                         $('.drawer').toggleClass('active');
                 });
+
+                $('#sh_line>a').on('mouseleave',function(e){
+                    if(flDat == true){
+                        closeFlash();
+                    }
+                });
+                $('#wh_line>a').on('mouseleave',function(e){
+                    closeFlash();
+                });
+                $('#fk_line>a').on('mouseleave',function(e){
+                    closeFlash();
+                });
             });
     
             window.onload = function(){
@@ -195,6 +222,45 @@
                 } else {
                     navbar.classList.remove("fix_stick");
                 }
+            }
+
+            var fl = document.getElementById('flash');
+
+            fl.addEventListener('mouseover',function(e){
+                openFlash();
+            });
+
+            var fl2 = document.getElementById('fls_cont');
+
+            fl2.addEventListener('mouseleave',function(e){
+                if(flDat == true){
+                    closeFlash();
+                }
+            });
+
+            var openFlash = function(){
+                TweenLite.to("#sh_line",1,{width:"50px",right:"0px",ease: Elastic.easeOut.config(1, 0.3)});
+                TweenLite.to("#sh_line>a", 2, {opacity: 1,delay:0.1});
+
+                TweenLite.to("#fk_line",1,{width:"80px",ease: Elastic.easeOut.config(1, 0.3),delay:0.3});
+                TweenLite.to("#fk_line>a", 2, {opacity: 1,delay:0.2});
+
+                TweenLite.to("#wh_line",1,{width:"50px",right:"0px",ease: Elastic.easeOut.config(1, 0.3),delay:0.5});
+                TweenLite.to("#wh_line>a", 2, {opacity: 1,delay:0.6});
+
+                flDat = true;
+            }
+
+            var closeFlash = function(){
+                TweenLite.to("#sh_line",0.2,{width:"0px",right:"20px",delay:0.2});
+                TweenLite.to("#sh_line>a", 0.2 , {opacity: 0,delay:0.1});
+
+                TweenLite.to("#fk_line",0.4,{width:"0px",delay:0.3});
+                TweenLite.to("#fk_line>a", 0.4, {opacity: 0,delay:0.2});
+
+                TweenLite.to("#wh_line",0.5,{width:"0px",right:"20px",delay:0.3});
+                TweenLite.to("#wh_line>a", 0.5, {opacity: 0,delay:0.1});
+                flDat = false;
             }
         </script>
 </body>

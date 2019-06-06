@@ -70,10 +70,10 @@ header>img{
 /* Flash */
 .flash{
     position: fixed;
-    bottom:30px;
+    bottom:45px;
     right: -20px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 18px;
+    padding-bottom: 18px;
     padding-left: 30px;
     overflow: hidden;
     z-index: 99;
@@ -84,7 +84,7 @@ header>img{
 }
 .flash>p{
     position: absolute;
-    top: 55px;
+    top: 45px;
     left: 50px;
     border-radius: 50%;
     animation: animate 3s linear infinite;
@@ -103,6 +103,65 @@ header>img{
     100%{
         box-shadow: 0 0 0 0 rgba(255,109,74,0);
     }
+}
+#fk_line{
+    /* width: 80px; */
+    width: 0px;
+    height: 2px;
+    background: gray;
+    position: fixed;
+    bottom: 90px;
+    right: 0px;
+    z-index: 90;
+    border-radius: 50% 0px 0px 50%;
+}
+#fk_line>a{
+    position: absolute;
+    top: -15px;
+    left: -25px;
+    opacity: 0;
+}
+#sh_line{
+    width: 0px;
+    height: 2px;
+    background: gray;
+    position: fixed;
+    bottom: 120px;
+    -moz-transform: rotate(47deg);
+    -webkit-transform: rotate(47deg);
+    -o-transform: rotate(47deg);
+    -ms-transform: rotate(47deg);
+    transform: rotate(47deg);
+    right: 20px;
+    z-index: 90;
+    border-radius: 50% 0px 0px 50%;
+}
+#sh_line>a{
+    position: absolute;
+    top: -12px;
+    left: -32px;
+    opacity: 0;
+}
+#wh_line{
+    width: 0px;
+    height: 2px;
+    background: gray;
+    position: fixed;
+    bottom: 60px;
+    -moz-transform: rotate(-47deg);
+    -webkit-transform: rotate(-47deg);
+    -o-transform: rotate(-47deg);
+    -ms-transform: rotate(-47deg);
+    transform: rotate(-47deg);
+    right: 20px;
+    z-index: 90;
+    border-radius: 50% 0px 0px 50%;
+}
+#wh_line>a{
+    position: absolute;
+    top: -22px;
+    left: -32px;
+    opacity: 0;
 }
 /* Flash end */
 
