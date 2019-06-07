@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,14 +12,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
     <title>Binary mind</title>
 </head>
+
 <body>
 
     <div class="overlay fxr">
         <div class="bs40 dwcl"></div>
         <div class="bs60">
             <ul class="drw_list fxc center_all">
-                <li><a href="#"  id="test">Home</a></li>
-                <li><a href="">Our Promo</a></li>
+                <li><a href="#" id="test">Home</a></li>
+                <li><a href="promo.html">Our Promo</a></li>
                 <li><a href="">Blog</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
@@ -26,13 +28,15 @@
         </div>
     </div>
 
-    <div class="flash" id="fls_cont">
+    <div id="outFlash"></div>
+
+    <div class="flash bd" id="fls_cont">
         <img src="img/flash.svg" width="60px" id="flash" class="ptn">
         <p></p>
     </div>
 
     <div id="fk_line">
-        <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+        <a href="#" class="bd"><i class="fab fa-twitter fa-2x"></i></a>
     </div>
 
     <div id="sh_line">
@@ -42,19 +46,19 @@
     <div id="wh_line">
         <a href="#"><i class="fas fab fa-whatsapp fa-2x fa-rotate-270" style="color: green;"></i></a>
     </div>
-        
-    <header class="xovf">
+
+    <header class="header xovf">
         <div class="sticky">
             <nav id="menu">
                 <div class="container">
                     <div class="drawer">
                         <div class="hamburger">
-                            
+
                         </div>
                     </div>
                     <ul class="list">
                         <li><a href="#">Home</a></li>
-                        <li><a href="">Our Promo</a></li>
+                        <li><a href="promo.html">Our Promo</a></li>
                         <li><a href="">Blog</a></li>
                         <li><a href="">Contact</a></li>
                     </ul>
@@ -67,7 +71,7 @@
                 <div class="bs50 fx alit_center">
                     <div class="slogan">
                         <h1 id="bm">Binary Mind Promo</h1>
-                        <h3 id="sl">Our Slogan Is The Best Of The World !   </h3>
+                        <h3 id="sl">Our Slogan Is The Best Of The World ! </h3>
                     </div>
                 </div>
                 <div class="bs20"></div>
@@ -75,7 +79,7 @@
         </div>
         <img src="img/trace.svg" alt="">
     </header>
-    
+
     <div class="container cntt">
         <div class="row">
             <div class="col-lg-2 col-sm-1 col-md-1 col-xs-0"></div>
@@ -84,12 +88,14 @@
                     <div>
                         <img src="img/quotes.svg" class="img img-responsive" alt="">
                     </div>
-        
+
                     <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae temporibus alias consectetur repellendus iure corrupti amet quam iste sunt, hic architecto enim fugit natus ipsum magni blanditiis fugiat deleniti id?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae temporibus alias
+                            consectetur repellendus iure corrupti amet quam iste sunt, hic architecto enim fugit natus
+                            ipsum magni blanditiis fugiat deleniti id?</p>
                     </div>
                 </section>
-            
+
             </div>
             <div class="col-lg-2 col-sm-1 col-md-1 col-xs-0"></div>
         </div>
@@ -97,7 +103,9 @@
         <div class="db_sp"></div>
 
         <section class="fxc center_all">
-            <div><h3>Together</h3></div>
+            <div>
+                <h3>Together</h3>
+            </div>
             <div><strong>Form a new group for the haitian technology </strong></div>
             <div class="sp"></div>
             <div class="imgPromo effect2">
@@ -109,7 +117,9 @@
 
         <div class="row">
             <article class="fxc center_all">
-                <div><h3>News</h3></div>
+                <div>
+                    <h3>News</h3>
+                </div>
                 <div><strong>Latest activity</strong></div>
                 <div class="sp"></div>
                 <div class="container news">
@@ -128,13 +138,17 @@
 
         <div class="row">
             <section class="container fxc center_all">
-                <div><h3>Message</h3></div>
+                <div>
+                    <h3>Message</h3>
+                </div>
                 <div><strong>For the Future</strong></div>
                 <div class="sp"></div>
                 <div class="col-lg-12">
                     <div class="col-lg-2 col-sm-2"></div>
                     <div class="col-lg-8 col-sm-8 bg_tigri" style="padding: 10px;">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates unde libero quas. Alias debitis aliquam qui amet, deleniti, quidem, optio harum quia praesentium iste quam cumque corporis? Et, vel ratione.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates unde libero quas. Alias
+                            debitis aliquam qui amet, deleniti, quidem, optio harum quia praesentium iste quam cumque
+                            corporis? Et, vel ratione.</p>
                     </div>
                     <div class="col-lg-2 col-sm-2"></div>
                 </div>
@@ -168,100 +182,79 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/js/all.min.js"></script>
     <script>
-        var flDat = false;
-            $(document).ready(function(){
-                var op = false;
+        $(document).ready(function () {
+            var op = false;
 
-                $('.drawer').click(function(){
-                    $('.drawer').toggleClass('active');
-                    if(op){
-                        $('.overlay').width('0%');
-                        $('body').css('overflow','auto');
-                        op = false;
-                    }else{
-                        $('.overlay').width('100%');
-                        $('body').css('overflow','hidden');
-                        op = true;
-                    }
-                });
-
-                $('.dwcl').on('click',function(){
+            $('.drawer').click(function () {
+                $('.drawer').toggleClass('active');
+                if (op) {
                     $('.overlay').width('0%');
-                        $('body').css('overflow','auto');
-                        op = false;
-                        $('.drawer').toggleClass('active');
-                });
-
-                $('#sh_line>a').on('mouseleave',function(e){
-                    if(flDat == true){
-                        closeFlash();
-                    }
-                });
-                $('#wh_line>a').on('mouseleave',function(e){
-                    closeFlash();
-                });
-                $('#fk_line>a').on('mouseleave',function(e){
-                    closeFlash();
-                });
-            });
-    
-            window.onload = function(){
-            var logo = document.getElementById("logo");
-                TweenMax.to('#bm',3,{opacity:1,ease : Elastic.easeOut.config(1, 1),x:100,delay:1});
-                TweenMax.to('#sl',3.5,{opacity:1,ease : Elastic.easeOut.config(1, 1),y:30,delay:1.6});
-                TweenMax.to('#minicontent>div:nth-child(2)',5,{opacity:1,scale:1,ease: Elastic.easeOut.config(1,0.3),delay:1.3});
-            }
-            window.onscroll = function() {myFunction()};
-
-            var navbar = document.getElementById("menu");
-            var sticky = navbar.offsetTop;
-
-            function myFunction() {
-                if (window.pageYOffset > sticky) {
-                    navbar.classList.add("fix_stick")
+                    $('body').css('overflow', 'auto');
+                    op = false;
                 } else {
-                    navbar.classList.remove("fix_stick");
-                }
-            }
-
-            var fl = document.getElementById('flash');
-
-            fl.addEventListener('mouseover',function(e){
-                openFlash();
-            });
-
-            var fl2 = document.getElementById('fls_cont');
-
-            fl2.addEventListener('mouseleave',function(e){
-                if(flDat == true){
-                    closeFlash();
+                    $('.overlay').width('100%');
+                    $('body').css('overflow', 'hidden');
+                    op = true;
                 }
             });
 
-            var openFlash = function(){
-                TweenLite.to("#sh_line",1,{width:"50px",right:"0px",ease: Elastic.easeOut.config(1, 0.3)});
-                TweenLite.to("#sh_line>a", 2, {opacity: 1,delay:0.1});
+            $('.dwcl').on('click', function () {
+                $('.overlay').width('0%');
+                $('body').css('overflow', 'auto');
+                op = false;
+                $('.drawer').toggleClass('active');
+            });
+        });
 
-                TweenLite.to("#fk_line",1,{width:"80px",ease: Elastic.easeOut.config(1, 0.3),delay:0.3});
-                TweenLite.to("#fk_line>a", 2, {opacity: 1,delay:0.2});
+        window.onload = function () {
+            var logo = document.getElementById("logo");
+            TweenMax.to('#bm', 3, { opacity: 1, ease: Elastic.easeOut.config(1, 1), x: 100, delay: 1 });
+            TweenMax.to('#sl', 3.5, { opacity: 1, ease: Elastic.easeOut.config(1, 1), y: 30, delay: 1.6 });
+            TweenMax.to('#minicontent>div:nth-child(2)', 5, { opacity: 1, scale: 1, ease: Elastic.easeOut.config(1, 0.3), delay: 1.3 });
+        }
+        window.onscroll = function () { myFunction() };
 
-                TweenLite.to("#wh_line",1,{width:"50px",right:"0px",ease: Elastic.easeOut.config(1, 0.3),delay:0.5});
-                TweenLite.to("#wh_line>a", 2, {opacity: 1,delay:0.6});
+        var navbar = document.getElementById("menu");
+        var sticky = navbar.offsetTop;
 
-                flDat = true;
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                navbar.classList.add("fix_stick")
+            } else {
+                navbar.classList.remove("fix_stick");
             }
+        }
 
-            var closeFlash = function(){
-                TweenLite.to("#sh_line",0.2,{width:"0px",right:"20px",delay:0.2});
-                TweenLite.to("#sh_line>a", 0.2 , {opacity: 0,delay:0.1});
+        document.getElementById('flash').addEventListener('mouseover', function (e) {
+            openFlash();
+        });
 
-                TweenLite.to("#fk_line",0.4,{width:"0px",delay:0.3});
-                TweenLite.to("#fk_line>a", 0.4, {opacity: 0,delay:0.2});
+        document.getElementById('outFlash').addEventListener('mouseleave', function (e) {
+            closeFlash();
+        });
 
-                TweenLite.to("#wh_line",0.5,{width:"0px",right:"20px",delay:0.3});
-                TweenLite.to("#wh_line>a", 0.5, {opacity: 0,delay:0.1});
-                flDat = false;
-            }
-        </script>
+        var openFlash = function () {
+            TweenLite.to("#sh_line", 1, { width: "50px", right: "0px", ease: Elastic.easeOut.config(1, 0.3) });
+            TweenLite.to("#sh_line>a", 2, { opacity: 1, delay: 0.1 });
+
+            TweenLite.to("#fk_line", 1, { width: "80px", ease: Elastic.easeOut.config(1, 0.3), delay: 0.3 });
+            TweenLite.to("#fk_line>a", 2, { opacity: 1, delay: 0.2 });
+
+            TweenLite.to("#wh_line", 1, { width: "50px", right: "0px", ease: Elastic.easeOut.config(1, 0.3), delay: 0.5 });
+            TweenLite.to("#wh_line>a", 2, { opacity: 1, delay: 0.6 });
+        }
+
+        var closeFlash = function () {
+            TweenLite.to("#sh_line", 0.2, { width: "0px", right: "20px", delay: 0.2 });
+            TweenLite.to("#sh_line>a", 0.2, { opacity: 0, delay: 0.1 });
+
+            TweenLite.to("#fk_line", 0.4, { width: "0px", delay: 0.3 });
+            TweenLite.to("#fk_line>a", 0.4, { opacity: 0, delay: 0.2 });
+
+            TweenLite.to("#wh_line", 0.5, { width: "0px", right: "20px", delay: 0.3 });
+            TweenLite.to("#wh_line>a", 0.5, { opacity: 0, delay: 0.1 });
+        }
+    </script>
 </body>
+
 </html>

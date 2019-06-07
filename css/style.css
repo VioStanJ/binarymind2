@@ -1,10 +1,10 @@
-header{
+.header{
     width: 100%;
     height: auto;
     background: rgb(0,0,0);
     background: linear-gradient(42deg, rgba(0,0,0,1) 0%, rgba(34,193,195,1) 100%);
 }
-header>img{
+.header>img{
     width: 100%;
     margin-top: 260px;
 }
@@ -162,6 +162,15 @@ header>img{
     top: -22px;
     left: -32px;
     opacity: 0;
+}
+#outFlash{
+    width: 115px;
+    height: 170px;
+    position: fixed;
+    /* bottom: 50px; */
+    right: 0px;
+    border: 1px solid red;
+    bottom:13px;
 }
 /* Flash end */
 
