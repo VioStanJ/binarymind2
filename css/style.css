@@ -104,7 +104,7 @@
         box-shadow: 0 0 0 0 rgba(255,109,74,0);
     }
 }
-#fk_line{
+#fk{
     /* width: 80px; */
     width: 0px;
     height: 2px;
@@ -115,13 +115,13 @@
     z-index: 90;
     border-radius: 50% 0px 0px 50%;
 }
-#fk_line>a{
+#fk>a{
     position: absolute;
     top: -15px;
     left: -25px;
     opacity: 0;
 }
-#sh_line{
+#sh{
     width: 0px;
     height: 2px;
     background: gray;
@@ -136,13 +136,13 @@
     z-index: 90;
     border-radius: 50% 0px 0px 50%;
 }
-#sh_line>a{
+#sh>a{
     position: absolute;
     top: -12px;
     left: -32px;
     opacity: 0;
 }
-#wh_line{
+#whs{
     width: 0px;
     height: 2px;
     background: gray;
@@ -157,20 +157,11 @@
     z-index: 90;
     border-radius: 50% 0px 0px 50%;
 }
-#wh_line>a{
+#whs>a{
     position: absolute;
     top: -22px;
     left: -32px;
     opacity: 0;
-}
-#outFlash{
-    width: 115px;
-    height: 170px;
-    position: fixed;
-    /* bottom: 50px; */
-    right: 0px;
-    border: 1px solid red;
-    bottom:13px;
 }
 /* Flash end */
 

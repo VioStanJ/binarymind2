@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
     <title>Binary mind</title>
+    
 </head>
 
 <body>
@@ -28,22 +29,20 @@
         </div>
     </div>
 
-    <div id="outFlash"></div>
-
-    <div class="flash bd" id="fls_cont">
+    <div class="flash" id="fls_cont">
         <img src="img/flash.svg" width="60px" id="flash" class="ptn">
         <p></p>
     </div>
 
-    <div id="fk_line">
-        <a href="#" class="bd"><i class="fab fa-twitter fa-2x"></i></a>
+    <div id="fk">
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
     </div>
 
-    <div id="sh_line">
+    <div id="sh">
         <a href="#"><i class="fas fa-share-alt fa-2x fa-rotate-180"></i></a>
     </div>
 
-    <div id="wh_line">
+    <div id="whs">
         <a href="#"><i class="fas fab fa-whatsapp fa-2x fa-rotate-270" style="color: green;"></i></a>
     </div>
 
@@ -145,7 +144,7 @@
                 <div class="sp"></div>
                 <div class="col-lg-12">
                     <div class="col-lg-2 col-sm-2"></div>
-                    <div class="col-lg-8 col-sm-8 bg_tigri" style="padding: 10px;">
+                    <div class="col-lg-8 col-sm-8 bg_tigri" style="padding: 20px;">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates unde libero quas. Alias
                             debitis aliquam qui amet, deleniti, quidem, optio harum quia praesentium iste quam cumque
                             corporis? Et, vel ratione.</p>
@@ -181,80 +180,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/js/all.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            var op = false;
-
-            $('.drawer').click(function () {
-                $('.drawer').toggleClass('active');
-                if (op) {
-                    $('.overlay').width('0%');
-                    $('body').css('overflow', 'auto');
-                    op = false;
-                } else {
-                    $('.overlay').width('100%');
-                    $('body').css('overflow', 'hidden');
-                    op = true;
-                }
-            });
-
-            $('.dwcl').on('click', function () {
-                $('.overlay').width('0%');
-                $('body').css('overflow', 'auto');
-                op = false;
-                $('.drawer').toggleClass('active');
-            });
-        });
-
-        window.onload = function () {
-            var logo = document.getElementById("logo");
-            TweenMax.to('#bm', 3, { opacity: 1, ease: Elastic.easeOut.config(1, 1), x: 100, delay: 1 });
-            TweenMax.to('#sl', 3.5, { opacity: 1, ease: Elastic.easeOut.config(1, 1), y: 30, delay: 1.6 });
-            TweenMax.to('#minicontent>div:nth-child(2)', 5, { opacity: 1, scale: 1, ease: Elastic.easeOut.config(1, 0.3), delay: 1.3 });
-        }
-        window.onscroll = function () { myFunction() };
-
-        var navbar = document.getElementById("menu");
-        var sticky = navbar.offsetTop;
-
-        function myFunction() {
-            if (window.pageYOffset > sticky) {
-                navbar.classList.add("fix_stick")
-            } else {
-                navbar.classList.remove("fix_stick");
-            }
-        }
-
-        document.getElementById('flash').addEventListener('mouseover', function (e) {
-            openFlash();
-        });
-
-        document.getElementById('outFlash').addEventListener('mouseleave', function (e) {
-            closeFlash();
-        });
-
-        var openFlash = function () {
-            TweenLite.to("#sh_line", 1, { width: "50px", right: "0px", ease: Elastic.easeOut.config(1, 0.3) });
-            TweenLite.to("#sh_line>a", 2, { opacity: 1, delay: 0.1 });
-
-            TweenLite.to("#fk_line", 1, { width: "80px", ease: Elastic.easeOut.config(1, 0.3), delay: 0.3 });
-            TweenLite.to("#fk_line>a", 2, { opacity: 1, delay: 0.2 });
-
-            TweenLite.to("#wh_line", 1, { width: "50px", right: "0px", ease: Elastic.easeOut.config(1, 0.3), delay: 0.5 });
-            TweenLite.to("#wh_line>a", 2, { opacity: 1, delay: 0.6 });
-        }
-
-        var closeFlash = function () {
-            TweenLite.to("#sh_line", 0.2, { width: "0px", right: "20px", delay: 0.2 });
-            TweenLite.to("#sh_line>a", 0.2, { opacity: 0, delay: 0.1 });
-
-            TweenLite.to("#fk_line", 0.4, { width: "0px", delay: 0.3 });
-            TweenLite.to("#fk_line>a", 0.4, { opacity: 0, delay: 0.2 });
-
-            TweenLite.to("#wh_line", 0.5, { width: "0px", right: "20px", delay: 0.3 });
-            TweenLite.to("#wh_line>a", 0.5, { opacity: 0, delay: 0.1 });
-        }
-    </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
