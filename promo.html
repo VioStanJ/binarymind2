@@ -18,7 +18,7 @@
         <div class="bs40 dwcl"></div>
         <div class="bs60">
             <ul class="drw_list fxc center_all">
-                <li><a href="#" id="test">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="promo.html">Our Promo</a></li>
                 <li><a href="">Blog</a></li>
                 <li><a href="">Contact</a></li>
@@ -32,20 +32,20 @@
         <p></p>
     </div>
 
-    <div id="fk_line">
-        <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+    <div id="fk">
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
     </div>
 
-    <div id="sh_line">
+    <div id="sh">
         <a href="#"><i class="fas fa-share-alt fa-2x fa-rotate-180"></i></a>
     </div>
 
-    <div id="wh_line">
+    <div id="whs">
         <a href="#"><i class="fas fab fa-whatsapp fa-2x fa-rotate-270" style="color: green;"></i></a>
     </div>
 
-    <header class="xovf">
-        <div class="sticky bd bg_tigri">
+    <header class="header2 xovf">
+        <div class="sticky bd">
             <nav id="menu">
                 <div class="container">
                     <div class="drawer">
@@ -54,78 +54,35 @@
                         </div>
                     </div>
                     <ul class="list">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="promo.html">Our Promo</a></li>
                         <li><a href="">Blog</a></li>
                         <li><a href="">Contact</a></li>
                     </ul>
                 </div>
             </nav>
-    </div>
+        </div>
+
+        <div class="bd fxr">
+            <div class="bd fh bs10 fx center_all">
+                <a href="">Chevron</a>
+            </div>
+            <div class="bd fh bs40"></div>
+            <div class="bd fh bs40"></div>
+            <div class="bd fh bs10 fx center_all">
+                <a href="">Chevron</a>
+            </div>
+        </div>
+        <img src="img/hlf.svg" alt="" style="width:50%; position: absolute; bottom: 0;">
+        <img src="img/hrh.svg" alt="" style="width:50%; position: absolute; bottom: 0; right:0px;">
     </header>
 
+    <div style="height: 100vh;" class="bd"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/js/all.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            var op = false;
-
-            $('.drawer').click(function () {
-                $('.drawer').toggleClass('active');
-                if (op) {
-                    $('.overlay').width('0%');
-                    $('body').css('overflow', 'auto');
-                    op = false;
-                } else {
-                    $('.overlay').width('100%');
-                    $('body').css('overflow', 'hidden');
-                    op = true;
-                }
-            });
-
-            $('.dwcl').on('click', function () {
-                $('.overlay').width('0%');
-                $('body').css('overflow', 'auto');
-                op = false;
-                $('.drawer').toggleClass('active');
-            });
-        });
-
-        var fl = document.getElementById('flash');
-
-        fl.addEventListener('mouseover', function (e) {
-            openFlash();
-        });
-
-        document.getElementById('outFlash').addEventListener('mouseleave', function (e) {
-            
-            alert('OK');
-        });
-
-        var openFlash = function () {
-            TweenLite.to("#sh_line", 1, { width: "50px", right: "0px", ease: Elastic.easeOut.config(1, 0.3) });
-            TweenLite.to("#sh_line>a", 2, { opacity: 1, delay: 0.1 });
-
-            TweenLite.to("#fk_line", 1, { width: "80px", ease: Elastic.easeOut.config(1, 0.3), delay: 0.3 });
-            TweenLite.to("#fk_line>a", 2, { opacity: 1, delay: 0.2 });
-
-            TweenLite.to("#wh_line", 1, { width: "50px", right: "0px", ease: Elastic.easeOut.config(1, 0.3), delay: 0.5 });
-            TweenLite.to("#wh_line>a", 2, { opacity: 1, delay: 0.6 });
-        }
-
-        var closeFlash = function () {
-            TweenLite.to("#sh_line", 0.2, { width: "0px", right: "20px", delay: 0.2 });
-            TweenLite.to("#sh_line>a", 0.2, { opacity: 0, delay: 0.1 });
-
-            TweenLite.to("#fk_line", 0.4, { width: "0px", delay: 0.3 });
-            TweenLite.to("#fk_line>a", 0.4, { opacity: 0, delay: 0.2 });
-
-            TweenLite.to("#wh_line", 0.5, { width: "0px", right: "20px", delay: 0.3 });
-            TweenLite.to("#wh_line>a", 0.5, { opacity: 0, delay: 0.1 });
-        }
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
