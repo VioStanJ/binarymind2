@@ -45,7 +45,7 @@
     </div>
 
     <header class="header2 xovf">
-        <div class="sticky bd">
+        <div class="sticky">
             <nav id="menu">
                 <div class="container">
                     <div class="drawer">
@@ -63,13 +63,13 @@
             </nav>
         </div>
 
-        <div class="bd fxr">
+        <div class="fxr">
 
-            <div class="bd fh bs10 fx center_all">
+            <div class="fh bs10 fx center_all">
                <a href="" > <i class="fas fa-chevron-left fa-3x turn"></i></a>
             </div>
 
-            <div class="bd fh bs50 fxc ">
+            <div class="fh bs50 fxc ">
                 <div class="db_sp"></div>
                 <h1 class="white">Jhon Doe</h1>
                 <div class="sp"></div>
@@ -93,28 +93,35 @@
                     </div>
                 </div>
             </div>
-            <div class="bd fh bs30 fx center_all">
+            <div class="fh bs30 fx center_all">
                 <img src="img/john.png" alt="">
             </div>
-            <div class="bd fh bs10 fx center_all">
+            <div class="fh bs10 fx center_all">
                 <a href=""><i class="fas fa-chevron-right fa-3x turn2"></i></a>
             </div>
         </div>
         <div href="" class="chev fx center_all">
-            <a href=""><img src="img/ch_double.png" alt=""></a>
+            <a href="#informations" id="to_chev"><img src="img/ch_double.png" alt=""></a>
         </div>
-        <div class="bd" style="position: absolute; bottom:0px; width:100%;">
+        <div style="position: absolute; bottom:0px; width:100%;">
             <img src="img/hlf.svg" alt="" style="width:50%; position: absolute; bottom: 0;">
             <img src="img/hrh.svg" alt="" style="width:50%; position: absolute; bottom: 0; right:0px;">
         </div>
     </header>
 
-    <div style="height: 100vh;" class="bd"></div>
+    <div id="informations" class="fh"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/js/all.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#to_chev').on('click', function(evt){
+                $('html, body').animate({scrollTop: $('#informations').offset().top}, 1000 );
+            });
+        });
+    </script>
 </body>
 </html>
