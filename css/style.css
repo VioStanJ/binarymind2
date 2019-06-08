@@ -10,11 +10,8 @@
 }
 .header2{
     height: 100vh;
-    /* background-image: url(../img/cut.svg);
-    background-repeat: no-repeat;
-    background-size: 100% auto; */
     background: rgb(57,230,254);
-background: linear-gradient(22deg, rgba(57,230,254,1) 0%, rgba(28,123,132,1) 82%);
+    background: linear-gradient(22deg, rgba(57,230,254,1) 0%, rgba(28,123,132,1) 82%);
 }
 .sticky{
     width: 100%;
@@ -25,6 +22,12 @@ background: linear-gradient(22deg, rgba(57,230,254,1) 0%, rgba(28,123,132,1) 82%
 }
 .blk{
     color: black;
+}
+.blue{
+    color: #35D7FE;
+}
+.nopad{
+    padding: 0!important;
 }
 /* Menu Open Close*/
 .drawer{
@@ -464,3 +467,34 @@ background: linear-gradient(0deg, rgba(5,31,32,1) 8%, rgba(34,193,195,1) 100%);
     color: rgb(221, 221, 221);
     margin-left: 10px;
 }
+/* Informations */
+.tr_i1{
+    width: 0px;
+    height: 2;
+    background: #35D7FE;
+    margin-right: 6px;
+    margin-top: -8px;
+}
+.tr_i{
+    height: 2;
+    background: #35D7FE;
+    margin-right: 6px;
+    margin-top: -8px;
+}
+.fig{
+    height: 200px;
+    background: #EBEBEB;
+    border-radius: 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.tx_ing{
+    position: absolute;
+    padding-right: 165px;
+    white-space: nowrap;
+    font-size: 2.4em;
+    margin-top: 40px;
+    text-shadow: 4px 2px 1px lightgray;
+}
+/* END Informations */

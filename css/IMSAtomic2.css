@@ -123,6 +123,13 @@ border-radius: 0;
 .sf_start{
 	align-self: flex-start!important;
 }
+.fl_r{
+  float: right;
+}
+
+.fl_l{
+  float: left;
+}
 .gw{flex-grow: 1;}
 .xgw{flex-grow: 0;}
 .shk{flex-shrink: 1;}

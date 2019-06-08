@@ -109,7 +109,78 @@
         </div>
     </header>
 
-    <div id="informations" class="fh"></div>
+    <div class="sp"></div>
+
+    <div id="informations" class="fh">
+        <div class="container">
+            <div class="row">
+                <div class="fxc alit_end" style="padding-right:15px;">
+                    <div class="db_sp"></div>
+                    <h2 class="fl_r blue">Informations</h2>
+                    <div class="tr_i1"></div>
+                </div>
+
+                <div class="sp"></div>
+
+                <div class="col-lg-12 nopad">
+                    <div class="col-lg-6">
+                        <p><strong>Web Site : </strong> jhondoe.com</p>
+                        <p><strong>Specialisation : </strong> Network</p>
+                    </div>
+                    <div class="col-lg-6 fxc alit_end">
+                        <p><strong>Biography</strong></p>
+                        <p style="text-align: end;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptas consectetur, alias blanditiis eum quos, quibusdam, delectus accusantium sapiente iure perferendis beatae excepturi dolor? Deserunt vel ratione voluptates ut officiis.</p>
+                    </div>
+                </div>
+
+                
+
+                <div class="fxc" style="padding-right:15px;">
+                    <div class="sp"></div>
+                    <h2 class="fl_r blue">Pics</h2>
+                    <div class="tr_i" style="width: 72px; margin-left: 6px;"></div>
+                </div>
+
+                <div class="sp"></div>
+                <section class="col-lg-12 nopad">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="fig" style="background-image: url('img/jane.png');"></div>
+                        <p class="center">A caption for the picture</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="fig" style="background-image: url('img/jane.png');"></div>
+                        <p class="center">A caption for the picture</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="fig" style="background-image: url('img/jane.png');"></div>
+                        <p class="center">A caption for the picture</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="fig" style="background-image: url('img/jane.png');"></div>
+                        <p class="center">A caption for the picture</p>
+                    </div>
+                </section>
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopad">
+                    <div class="db_sp"></div>
+                    <div class="fxr center_all" style="padding-right:15px;">
+                        <div class="fxc center_all">
+                                <p>Network,Computer Programming,Java</p>
+                        </div>
+                        <div class="fxc alit_end">
+                            <h3 class="tx_ing">Ing. Jhon Doe</h3>
+                            <img src="img/param.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="sp"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
@@ -122,6 +193,7 @@
                 $('html, body').animate({scrollTop: $('#informations').offset().top}, 1000 );
             });
         });
+        TweenLite.to('.tr_i1', 2, { ease: Back.easeOut.config(1.7), width:"180px",delay:2});
     </script>
 </body>
 </html>
