@@ -35,9 +35,11 @@ var sticky = navbar.offsetTop;
 
 function myFunction() {
     if (window.pageYOffset > sticky) {
-        navbar.classList.add("fix_stick")
+        navbar.classList.add("fix_stick");
+        $('#menu>div>ul').addClass('list2');
     } else {
         navbar.classList.remove("fix_stick");
+        $('#menu>div>ul').removeClass('list2');
     }
 }
 
