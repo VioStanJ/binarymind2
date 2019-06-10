@@ -414,6 +414,7 @@ background: linear-gradient(0deg, rgba(5,31,32,1) 8%, rgba(34,193,195,1) 100%);
     position: relative;
     top: 5px;
     left: -30px;
+    white-space: nowrap;
 }
 .pina:hover{
     text-decoration: none;
@@ -433,6 +434,7 @@ background: linear-gradient(0deg, rgba(5,31,32,1) 8%, rgba(34,193,195,1) 100%);
     position: relative;
     top: 40px;
     right: -12px;
+    white-space: nowrap;
 }
 .jusa:hover{
     text-decoration: none;
@@ -521,3 +523,15 @@ background: linear-gradient(0deg, rgba(5,31,32,1) 8%, rgba(34,193,195,1) 100%);
     text-shadow: 4px 2px 1px lightgray;
 }
 /* END Informations */
+
+/* Promo Header */
+#student>img{
+    position: absolute; 
+    bottom: 0; 
+    height: 90%;
+}
+.biog{
+    z-index: 100; 
+    justify-content: space-around;
+}
+/* END Promo Header */

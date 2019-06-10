@@ -68,6 +68,9 @@ i{
 .center{
 	text-align:center;
 }
+.nowrap{
+  white-space: nowrap;
+}
 textarea,
 input.text,
 input[type="text"],

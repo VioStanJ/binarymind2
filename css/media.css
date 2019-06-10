@@ -2,6 +2,7 @@
     .list{display: none;}
     .news{width: 90%!important;}
     .cntt{margin-top: -140px;}
+    #student>img{height: 75%;}
 }
 
 @media screen and (max-width: 768px){
@@ -42,6 +43,11 @@
         margin-top: -20px;
         margin-left: 16px;
     }
+    #student>img{display: none;}
+    #student{flex-basis: 0%;}
+    .biog{flex-basis: 80%;}
+    .biog>div>h1,.biog>div>h4,.biog>p{text-align: center;}
+    .pina{margin-top: -60px;top: -30px;left: 140px;}
 }
 
 @media (max-width: 576px) {
@@ -79,4 +85,5 @@
         margin-top: -20px;
         margin-left: 20px;
     }
+    footer>div:nth-child(1){flex-direction: row;}
 }
