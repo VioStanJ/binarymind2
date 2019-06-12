@@ -16,7 +16,7 @@ create table promo(
     siteweb varchar(120),
     specialisation varchar(255),
     bio text,
-    font varchar(255),
+    picfront varchar(255),
     p1 varchar(255),
     p2 varchar(255),
     p3 varchar(255),

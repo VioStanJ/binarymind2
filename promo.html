@@ -86,12 +86,12 @@
                 <!-- -->
                 <div class="fxr fw center_all soci">
                     <div class="fx btw bs60 alit_center">
-                        <a href="" id="phone"><i class="fas fa-phone fa-rotate-90 fa-2x blk"></i></a>
-                        <a href="" id="mail"><i class="far fa-envelope fa-2x blk"></i></a>
-                        <a href="" id="linkedin"><i class="fab fa-linkedin fa-2x blk"></i></a>
-                        <a href="" id="facebook"><i class="fab fa-facebook-f fa-2x blk"></i></a>
-                        <a href="" id="instagram"><i class="fab fa-instagram fa-2x blk"></i></a>
-                        <a href="" id="twitter"><i class="fab fa-twitter fa-2x blk"></i></a>
+                        <a href="" target="_blank" id="phone"><i class="fas fa-phone fa-rotate-90 fa-2x blk"></i></a>
+                        <a href="" target="_blank" id="mail"><i class="far fa-envelope fa-2x blk"></i></a>
+                        <a href="" target="_blank" id="linkedin"><i class="fab fa-linkedin fa-2x blk"></i></a>
+                        <a href="" target="_blank" id="facebook"><i class="fab fa-facebook-f fa-2x blk"></i></a>
+                        <a href="" target="_blank" id="instagram"><i class="fab fa-instagram fa-2x blk"></i></a>
+                        <a href="" target="_blank" id="twitter"><i class="fab fa-twitter fa-2x blk"></i></a>
                     </div>
                     <div class="db_sp"></div>
                 </div>
@@ -100,7 +100,7 @@
             </div>
 
             <div class="fh bs30 fx center_all" id="student">
-                <img src="img/john.png" alt="">
+                <img src="img/john.png" alt="" id="frontPic">
             </div>
 
             <div class="fh bs10 fx center_all">
@@ -250,13 +250,13 @@
             function printIndex(){
                 if(index < 1){
                     index = 0; $('#left').css('display','none');
-                }
-                else if(index >= studentSize()){
+                }else if(index >= studentSize()){
                     index = studentSize(); 
                     $('#right').css('display','none');
                 }else if(index >= 1){
                     $('#left').css('display','block');
-                }if(studentSize() != index){
+                }
+                if(studentSize() != index){
                     $('#right').css('display','block');
                 }   
             }
@@ -274,6 +274,29 @@
                      var t3 = new TimelineMax({repeat:0, repeatDelay:0.5, yoyo:false});
                      t3.to("#desc", 0.6, {ease: Power2.easeOut , x : -100 , opacity : 0,delay:0.2}).set('#desc',{text:' - '+obj.descript})
                      .to("#desc", 0.6, {ease: Power2.easeOut , x : 0 , opacity : 1});
+
+                     var t4 = new TimelineMax({repeat:0, repeatDelay:0, yoyo:false});
+                     t4.to("#frontPic", 0.6, {ease: Power2.easeOut , x : 100 , opacity : 0}).set('#frontPic',{attr:{src:obj.picfront}})
+                     .to("#frontPic", 0.6, {ease: Power2.easeOut , x : 0 , opacity : 1});
+
+                     if(obj.tel.length != 0){obj.tel = 'tel:'+obj.tel;}
+                     if(obj.mail.length != 0){obj.mail = 'mailto:'+obj.mail;}
+                     addAttr('#phone',obj.tel);
+                     addAttr('#mail',obj.mail);
+                     addAttr('#linkedin',obj.linkedin);
+                     addAttr('#facebook',obj.facebook);
+                     addAttr('#instagram',obj.instagram);
+                     addAttr('#twitter',obj.twitter);
+
+                }
+            }
+
+            function addAttr(elem,val){
+                if(val.length === 0){
+                    $(elem).css('display','none');
+                }else{
+                    $(elem).css('display','block');
+                    $(elem).attr("href",val);
                 }
             }
         });
