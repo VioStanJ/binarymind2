@@ -131,12 +131,12 @@
 
                 <div class="col-lg-12 nopad">
                     <div class="col-lg-6">
-                        <p><strong>Web Site : </strong> jhondoe.com</p>
-                        <p><strong>Specialisation : </strong> Network</p>
+                        <p><strong>Web Site : </strong> <span id="website">jhondoe.com</span></p>
+                        <p><strong>Specialisation : </strong> <span id="specialize">Network</span></p>
                     </div>
                     <div class="col-lg-6 fxc alit_end">
                         <p><strong>Biography</strong></p>
-                        <p style="text-align: end;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptas consectetur, alias blanditiis eum quos, quibusdam, delectus accusantium sapiente iure perferendis beatae excepturi dolor? Deserunt vel ratione voluptates ut officiis.</p>
+                        <p style="text-align: end;" id="biograph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptas consectetur, alias blanditiis eum quos, quibusdam, delectus accusantium sapiente iure perferendis beatae excepturi dolor? Deserunt vel ratione voluptates ut officiis.</p>
                     </div>
                 </div>
 
@@ -151,22 +151,22 @@
                 <div class="sp"></div>
                 <section class="col-lg-12 nopad">
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="fig" style="background-image: url('img/jane.png');"></div>
+                        <div class="fig" id="p1" style="background-image: url('img/jane.png');"></div>
                         <p class="center">A caption for the picture</p>
                     </div>
 
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="fig" style="background-image: url('img/jane.png');"></div>
+                        <div class="fig" id="p2" style="background-image: url('img/jane.png');"></div>
                         <p class="center">A caption for the picture</p>
                     </div>
 
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="fig" style="background-image: url('img/jane.png');"></div>
+                        <div class="fig" id="p3" style="background-image: url('img/jane.png');"></div>
                         <p class="center">A caption for the picture</p>
                     </div>
 
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="fig" style="background-image: url('img/jane.png');"></div>
+                        <div class="fig" id="p4" style="background-image: url('img/jane.png');"></div>
                         <p class="center">A caption for the picture</p>
                     </div>
                 </section>
@@ -175,10 +175,10 @@
                     <div class="db_sp"></div>
                     <div class="fxr center_all cont_ing" style="padding-right:15px;">
                         <div class="fxc center_all">
-                                <p>Network,Computer Programming,Java</p>
+                                <p id="ffspe">Network,Computer Programming,Java</p>
                         </div>
                         <div class="fxc alit_end">
-                            <h3 class="tx_ing">Ing. Jhon Doe</h3>
+                            <h3 class="tx_ing">Ing. <span id="flname">Jhon Doe</span></h3>
                             <img src="img/param.svg" alt="">
                         </div>
                     </div>
@@ -287,7 +287,15 @@
                      addAttr('#facebook',obj.facebook);
                      addAttr('#instagram',obj.instagram);
                      addAttr('#twitter',obj.twitter);
-
+                     $('#website').text(obj.siteweb);
+                     $('#specialize').text(obj.specialisation);
+                     $('#biograph').text(obj.bio);
+                     $('#p1').css('background-image','url('+obj.p1+')');
+                     $('#p2').css('background-image','url('+obj.p2+')');
+                     $('#p3').css('background-image','url('+obj.p3+')');
+                     $('#p4').css('background-image','url('+obj.p4+')');
+                     $('#flname').text(obj.nom+' '+obj.prenom);
+                     $('#ffspe').text(obj.specialisation);
                 }
             }
 
