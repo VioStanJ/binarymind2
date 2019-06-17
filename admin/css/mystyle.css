@@ -1,0 +1,25 @@
+git body{background-image: url(../../img/ctnsvg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;}
+.center{
+    padding: 20px;
+    border-radius: 8px;
+    width: 350px;
+    background: white;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+.center>div:nth-child(1){
+    border: 1px solid gray;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: rgb(157, 238, 157);
+    margin-top: -80px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+.center>div:nth-child(1)>img{width: 100px;height: 90px; margin-top: 10px;}
