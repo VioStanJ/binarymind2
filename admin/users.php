@@ -46,7 +46,7 @@
                 <!-- Logo -->
                 <!-- ============================================================== -->
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="index.php">
                         <!-- Logo icon -->
                         <b>
                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
@@ -102,25 +102,25 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
                         <li>
-                            <a href="home.html" class="waves-effect"><i class="fa fa-clock-o m-r-10" aria-hidden="true"></i>Dashboard</a>
+                            <a href="home.php" class="waves-effect"><i class="fa fa-clock-o m-r-10" aria-hidden="true"></i>Dashboard</a>
                         </li>
                         <li>
-                            <a href="profile.html" class="waves-effect"><i class="fa fa-user m-r-10" aria-hidden="true"></i>Profile</a>
+                            <a href="profile.php" class="waves-effect"><i class="fa fa-user m-r-10" aria-hidden="true"></i>Profile</a>
                         </li>
                         <li>
-                            <a href="liststudents.html" class="waves-effect"><i class="fa fa-table m-r-10" aria-hidden="true"></i>List Students</a>
+                            <a href="liststudents.php" class="waves-effect"><i class="fa fa-table m-r-10" aria-hidden="true"></i>List Students</a>
                         </li>
                         <li>
-                            <a href="student.html" class="waves-effect"><i class="fa fa-graduation-cap m-r-10" aria-hidden="true"></i>Student</a>
+                            <a href="student.php" class="waves-effect"><i class="fa fa-graduation-cap m-r-10" aria-hidden="true"></i>Student</a>
                         </li>
                         <li>
-                            <a href="users.html" class="waves-effect"><i class="fa fa-globe m-r-10" aria-hidden="true"></i>Users</a>
+                            <a href="users.php" class="waves-effect"><i class="fa fa-globe m-r-10" aria-hidden="true"></i>Users</a>
                         </li>
                         <li>
-                            <a href="events.html" class="waves-effect"><i class="fa fa-film m-r-10" aria-hidden="true"></i>Events</a>
+                            <a href="events.php" class="waves-effect"><i class="fa fa-film m-r-10" aria-hidden="true"></i>Events</a>
                         </li>
                         <li>
-                            <a href="pages-error-404.html" class="waves-effect"><i class="fa fa-sign-out m-r-10" aria-hidden="true"></i>Log Out</a>
+                            <a href="pages-error-404.php" class="waves-effect"><i class="fa fa-sign-out m-r-10" aria-hidden="true"></i>Log Out</a>
                         </li>
                     </ul>
                     <div class="text-center m-t-30">
@@ -147,10 +147,10 @@
                 <!-- ============================================================== -->
                 <div class="row page-titles">
                     <div class="col-md-6 col-8 align-self-center">
-                        <h3 class="text-themecolor m-b-0 m-t-0">Profile</h3>
+                        <h3 class="text-themecolor m-b-0 m-t-0">Users</h3>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                            <li class="breadcrumb-item active">Profile</li>
+                            <li class="breadcrumb-item active">User</li>
                         </ol>
                     </div>
                     <div class="col-md-6 col-4 align-self-center">
@@ -163,16 +163,38 @@
                 <!-- ============================================================== -->
                 <!-- Start Page Content -->
                 <!-- ============================================================== -->
-                <!-- Row -->
                 <div class="row">
                     <!-- Column -->
                     <div class="col-lg-4 col-xlg-3 col-md-5">
                         <div class="card">
-                            <div class="card-block">
-                                <center class="m-t-30"> <img src="../assets/images/users/5.jpg" class="img-circle" width="150" />
-                                    <h4 class="card-title m-t-10">Hanna Gover</h4>
-                                    <p>E-mail : jhondoe@fake.com</p>
-                                </center>
+                            <div class="card-block" style="margin-top: -20px;">
+                                <form action="">
+                                    <center class="m-t-30">
+                                        <img src="../assets/images/users/5.jpg" class="img-circle" width="150" />
+                                        <br><br>
+                                        <input type="file" name="prof" id="">
+                                        <br>
+                                    </center>
+                                    <br>
+                                    <input type="text" placeholder="First Name"
+                                        class="form-control form-control-line"><br><br>
+
+                                    <input type="text" placeholder="Last Name"
+                                    class="form-control form-control-line"><br><br>
+
+                                    <input type="mail" placeholder="E-mail"
+                                    class="form-control form-control-line"><br><br>
+
+                                    <input type="password" placeholder="Enter Password"
+                                    class="form-control form-control-line"><br><br>
+
+                                    <input type="password" placeholder="Re-enter Password"
+                                    class="form-control form-control-line"><br><br>
+
+                                    <center class="col-lg-12">
+                                        <input type="submit" value="Submit" class="btn btn-success text-center">
+                                    </center>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -181,49 +203,64 @@
                     <div class="col-lg-8 col-xlg-9 col-md-7">
                         <div class="card">
                             <div class="card-block">
-                                <form class="form-horizontal form-material">
-                                    <div class="form-group">
-                                        <label class="col-md-12">Change Picture</label>
-                                        <div class="col-md-12">
-                                            <input type="text" placeholder="" class="form-control form-control-line">
-                                        </div>
+                                    <h4 class="card-title">List of Users</h4>
+                                    <h6 class="card-subtitle">Select a user to edit</h6>
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>First Name</th>
+                                                    <th>Last Name</th>
+                                                    <th>Username</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Deshmukh</td>
+                                                    <td>Prohaska</td>
+                                                    <td>@Genelia</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Deshmukh</td>
+                                                    <td>Gaylord</td>
+                                                    <td>@Ritesh</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>Sanghani</td>
+                                                    <td>Gusikowski</td>
+                                                    <td>@Govinda</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>Roshan</td>
+                                                    <td>Rogahn</td>
+                                                    <td>@Hritik</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>Joshi</td>
+                                                    <td>Hickle</td>
+                                                    <td>@Maruti</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>Nigam</td>
+                                                    <td>Eichmann</td>
+                                                    <td>@Sonu</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
-                                    <div class="form-group">
-                                        <label class="col-md-12">Full Name</label>
-                                        <div class="col-md-12">
-                                            <input type="text" placeholder="" class="form-control form-control-line">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="example-email" class="col-md-12">Email</label>
-                                        <div class="col-md-12">
-                                            <input type="email" placeholder="" class="form-control form-control-line" name="example-email" id="example-email">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-12">Password</label>
-                                        <div class="col-md-12">
-                                            <input type="password" value="" class="form-control form-control-line">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-12">Phone No</label>
-                                        <div class="col-md-12">
-                                            <input type="text" placeholder="" class="form-control form-control-line">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="col-sm-12">
-                                            <button class="btn btn-success">Update Profile</button>
-                                        </div>
-                                    </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!-- Column -->
                 </div>
-                <!-- Row -->
                 <!-- ============================================================== -->
                 <!-- End PAge Content -->
                 <!-- ============================================================== -->
@@ -265,6 +302,10 @@
     <script src="../assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
     <!--Custom JavaScript -->
     <script src="js/custom.min.js"></script>
+    <!-- google maps api -->
+    <script src="https://maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="../assets/plugins/gmaps/gmaps.min.js"></script>
+    <script src="../assets/plugins/gmaps/jquery.gmaps.js"></script>
     <!-- ============================================================== -->
     <!-- Style switcher -->
     <!-- ============================================================== -->

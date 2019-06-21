@@ -25,7 +25,19 @@
 <![endif]-->
 </head>
 
-<body class="fix-header fix-sidebar card-no-border">
+<body class="fix-header card-no-border">
+    <style>
+        .bd {
+            border: 1px solid black;
+        }
+
+        .pad {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .ba{padding-bottom: 15px; padding-top: 15px; margin-bottom: 25px;}
+        .mycard{background: white; border-radius: 5px;}
+    </style>
     <!-- ============================================================== -->
     <!-- Preloader - style you can find in spinners.css -->
     <!-- ============================================================== -->
@@ -46,13 +58,13 @@
                 <!-- Logo -->
                 <!-- ============================================================== -->
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="index.php">
                         <!-- Logo icon -->
                         <b>
                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                             <!-- Dark Logo icon -->
                             <img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
-                            
+
                         </b>
                         <!--End Logo icon -->
                         <!-- Logo text -->
@@ -71,10 +83,13 @@
                     <!-- ============================================================== -->
                     <ul class="navbar-nav mr-auto mt-md-0 ">
                         <!-- This is  -->
-                        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                        <li class="nav-item"> <a
+                                class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark"
+                                href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
                         <li class="nav-item hidden-sm-down">
                             <form class="app-search p-l-20">
-                                <input type="text" class="form-control" placeholder="Search for..."> <a class="srh-btn"><i class="ti-search"></i></a>
+                                <input type="text" class="form-control" placeholder="Search for..."> <a
+                                    class="srh-btn"><i class="ti-search"></i></a>
                             </form>
                         </li>
                     </ul>
@@ -83,7 +98,10 @@
                     <!-- ============================================================== -->
                     <ul class="navbar-nav my-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../assets/images/users/1.jpg" alt="user" class="profile-pic m-r-5" />Markarn Doe</a>
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href=""
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                                    src="../assets/images/users/1.jpg" alt="user" class="profile-pic m-r-5" />Markarn
+                                Doe</a>
                         </li>
                     </ul>
                 </div>
@@ -102,25 +120,32 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
                         <li>
-                            <a href="home.html" class="waves-effect"><i class="fa fa-clock-o m-r-10" aria-hidden="true"></i>Dashboard</a>
+                            <a href="home.php" class="waves-effect"><i class="fa fa-clock-o m-r-10"
+                                    aria-hidden="true"></i>Dashboard</a>
                         </li>
                         <li>
-                            <a href="profile.html" class="waves-effect"><i class="fa fa-user m-r-10" aria-hidden="true"></i>Profile</a>
+                            <a href="profile.php" class="waves-effect"><i class="fa fa-user m-r-10"
+                                    aria-hidden="true"></i>Profile</a>
                         </li>
                         <li>
-                            <a href="liststudents.html" class="waves-effect"><i class="fa fa-table m-r-10" aria-hidden="true"></i>List Students</a>
+                            <a href="liststudents.php" class="waves-effect"><i class="fa fa-table m-r-10"
+                                    aria-hidden="true"></i>List Students</a>
                         </li>
                         <li>
-                            <a href="student.html" class="waves-effect"><i class="fa fa-graduation-cap m-r-10" aria-hidden="true"></i>Student</a>
+                            <a href="student.php" class="waves-effect"><i class="fa fa-graduation-cap m-r-10"
+                                    aria-hidden="true"></i>Student</a>
                         </li>
                         <li>
-                            <a href="users.html" class="waves-effect"><i class="fa fa-globe m-r-10" aria-hidden="true"></i>Users</a>
+                            <a href="users.php" class="waves-effect"><i class="fa fa-globe m-r-10"
+                                    aria-hidden="true"></i>Users</a>
                         </li>
                         <li>
-                            <a href="events.html" class="waves-effect"><i class="fa fa-film m-r-10" aria-hidden="true"></i>Events</a>
+                            <a href="events.php" class="waves-effect"><i class="fa fa-film m-r-10"
+                                    aria-hidden="true"></i>Events</a>
                         </li>
                         <li>
-                            <a href="pages-error-404.html" class="waves-effect"><i class="fa fa-sign-out m-r-10" aria-hidden="true"></i>Log Out</a>
+                            <a href="pages-error-404.php" class="waves-effect"><i class="fa fa-sign-out m-r-10"
+                                    aria-hidden="true"></i>Log Out</a>
                         </li>
                     </ul>
                     <div class="text-center m-t-30">
@@ -147,11 +172,14 @@
                 <!-- ============================================================== -->
                 <div class="row page-titles">
                     <div class="col-md-6 col-8 align-self-center">
-                        <h3 class="text-themecolor m-b-0 m-t-0">Dashboard</h3>
+                        <h3 class="text-themecolor m-b-0 m-t-0">Student</h3>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                            <li class="breadcrumb-item active">Dashboard</li>
+                            <li class="breadcrumb-item active">Student</li>
                         </ol>
+                    </div>
+                    <div class="col-md-6 col-4 align-self-center">
+
                     </div>
                 </div>
                 <!-- ============================================================== -->
@@ -160,111 +188,125 @@
                 <!-- ============================================================== -->
                 <!-- Start Page Content -->
                 <!-- ============================================================== -->
-                <!-- Row -->
-                <div class="row">
-                    <!-- Column -->
-                    <div class="col-sm-6">
-                        <div class="card">
-                            <div class="card-block">
-                                <h4 class="card-title">Students</h4>
-                                <div class="text-right">
-                                    <h2 class="font-light m-b-0"><i class="ti-arrow-up text-success"></i> 75</h2>
-                                    <span class="text-muted">Todays Income</span>
+                <form action="">
+                    <div class="row">
+                        <!-- Column -->
+                        <div class="col-lg-4 col-xlg-3 col-md-5">
+                            <div class="card">
+                                <div class="card-block">
+                                    <center class="m-t-30">
+                                        <img src="../assets/images/users/5.jpg" class="img-circle" width="150" />
+                                        <br><br>
+                                        <input type="file" name="prof" id="">
+                                        <br>
+                                        <div style="height: 15px;"></div>
+                                    </center>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Column -->
-                    <!-- Column -->
-                    <div class="col-sm-6">
-                        <div class="card">
-                            <div class="card-block">
-                                <h4 class="card-title">Events</h4>
-                                <div class="text-right">
-                                    <h2 class="font-light m-b-0"><i class="ti-arrow-up text-info"></i> 12</h2>
-                                    <span class="text-muted">Todays Income</span>
+                        <!-- Column -->
+                        <!-- Column -->
+                        <div class="col-lg-8 col-xlg-9 col-md-7">
+                            <div class="card">
+                                <div class="card-block">
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <input type="text" placeholder="Slug"
+                                                class="form-control form-control-line">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row pad">
+                                        <div class="col-md-6">
+                                            <input type="text" placeholder="First Name"
+                                                class="form-control form-control-line">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" placeholder="Last Name"
+                                                class="form-control form-control-line">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="col-md-12">Description</label>
+                                        <div class="col-md-12">
+                                            <textarea placeholder="" class="form-control form-control-line" name=""
+                                                id=""></textarea>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- Column -->
                     </div>
-                    <!-- Column -->
-                </div>
-                <!-- Row -->
 
-                <!-- Row -->
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="card">
-                            <div class="card-block">
-                                <!-- <select class="custom-select pull-right">
-                                    <option selected>January</option>
-                                    <option value="1">February</option>
-                                    <option value="2">March</option>
-                                    <option value="3">April</option>
-                                </select> -->
-                                <h4 class="card-title">Last Events</h4>
-                                <div class="table-responsive m-t-40">
-                                    <table class="table stylish-table">
-                                        <thead>
-                                            <tr>
-                                                <th colspan="2">Assigned</th>
-                                                <th>Name</th>
-                                                <th>Budget</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td style="width:50px;"><span class="round">S</span></td>
-                                                <td>
-                                                    <h6>Sunil Joshi</h6><small class="text-muted">Web Designer</small></td>
-                                                <td>Elite Admin</td>
-                                                <td>$3.9K</td>
-                                            </tr>
-                                            <tr class="active">
-                                                <td><span class="round"><img src="../assets/images/users/2.jpg" alt="user" width="50" /></span></td>
-                                                <td>
-                                                    <h6>Andrew</h6><small class="text-muted">Project Manager</small></td>
-                                                <td>Real Homes</td>
-                                                <td>$23.9K</td>
-                                            </tr>
-                                            <tr>
-                                                <td><span class="round round-success">B</span></td>
-                                                <td>
-                                                    <h6>Bhavesh patel</h6><small class="text-muted">Developer</small></td>
-                                                <td>MedicalPro Theme</td>
-                                                <td>$12.9K</td>
-                                            </tr>
-                                            <tr>
-                                                <td><span class="round round-primary">N</span></td>
-                                                <td>
-                                                    <h6>Nirav Joshi</h6><small class="text-muted">Frontend Eng</small></td>
-                                                <td>Elite Admin</td>
-                                                <td>$10.9K</td>
-                                            </tr>
-                                            <tr>
-                                                <td><span class="round round-warning">M</span></td>
-                                                <td>
-                                                    <h6>Micheal Doe</h6><small class="text-muted">Content Writer</small></td>
-                                                <td>Helping Hands</td>
-                                                <td>$12.9K</td>
-                                            </tr>
-                                            <tr>
-                                                <td><span class="round round-danger">N</span></td>
-                                                <td>
-                                                    <h6>Johnathan</h6><small class="text-muted">Graphic</small></td>
-                                                <td>Digital Agency</td>
-                                                <td>$2.6K</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                    <fieldset class="col-lg-12">
+                        <legend>Social Media</legend>
+                        <div class="row ba mycard pad">
+                                <div class="col-md-4">
+                                    <div class="col-md-12">
+                                        <input type="email" placeholder="E-mail" class="form-control form-control-line">
+                                    </div>
                                 </div>
+                                <div class="col-md-4">
+                                    <div class="col-md-12">
+                                        <input type="text" placeholder="Linkedin" class="form-control form-control-line">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="col-md-12">
+                                        <input type="text" placeholder="Facebook" class="form-control form-control-line">
+                                    </div>
+                                </div>
+                        </div>
+    
+                        <div class="row ba mycard pad">
+                                <div class="col-md-4">
+                                    <div class="col-md-12">
+                                        <input type="text" placeholder="Instagram" class="form-control form-control-line">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="col-md-12">
+                                        <input type="text" placeholder="Twitter" class="form-control form-control-line">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="col-md-12">
+                                        <input type="text" placeholder="Web Site" class="form-control form-control-line">
+                                    </div>
+                                </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="col-lg-12">
+                        <legend class="text-center">Poster</legend>
+                        <div class="row ba mycard pad">
+                            <input type="file" name="" id="">
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset class="col-lg-12">
+                        <legend class="text-center">Pictures</legend>
+                        <div class="row ba mycard pad">
+                            <div class="col-md-6">
+                                <input type="file" name="p1" id="">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="file" name="p2" id="">
+                            </div>
+                            <br><br>
+                            <div class="col-md-6">
+                                <input type="file" name="p3" id="">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="file" name="p4" id="">
                             </div>
                         </div>
-                    </div>
-                </div>
-                <!-- Row -->
-                <!-- Row -->
+                    </fieldset>
 
+                    <div class="col-md-12" style="margin-bottom : 30px;">
+                        <input type="submit" value="Submit" class="float-right btn btn-success" name="" id="">
+                    </div>
+                </form>
                 <!-- ============================================================== -->
                 <!-- End PAge Content -->
                 <!-- ============================================================== -->
@@ -275,9 +317,7 @@
             <!-- ============================================================== -->
             <!-- footer -->
             <!-- ============================================================== -->
-            <footer class="footer text-center">
-                @ 2019 BinaryMind
-            </footer>
+            <footer class="footer text-center"> © 2019 BinaryMind </footer>
             <!-- ============================================================== -->
             <!-- End footer -->
             <!-- ============================================================== -->
@@ -306,12 +346,6 @@
     <script src="../assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
     <!--Custom JavaScript -->
     <script src="js/custom.min.js"></script>
-    <!-- ============================================================== -->
-    <!-- This page plugins -->
-    <!-- ============================================================== -->
-    <!-- Flot Charts JavaScript -->
-    <script src="../assets/plugins/flot/jquery.flot.js"></script>
-    <script src="../assets/plugins/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
     <!-- ============================================================== -->
     <!-- Style switcher -->
     <!-- ============================================================== -->

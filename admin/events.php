@@ -26,18 +26,6 @@
 </head>
 
 <body class="fix-header card-no-border">
-    <style>
-        .bd {
-            border: 1px solid black;
-        }
-
-        .pad {
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-        .ba{padding-bottom: 15px; padding-top: 15px; margin-bottom: 25px;}
-        .mycard{background: white; border-radius: 5px;}
-    </style>
     <!-- ============================================================== -->
     <!-- Preloader - style you can find in spinners.css -->
     <!-- ============================================================== -->
@@ -58,21 +46,20 @@
                 <!-- Logo -->
                 <!-- ============================================================== -->
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="index.php">
                         <!-- Logo icon -->
                         <b>
                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                             <!-- Dark Logo icon -->
                             <img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
-
+                            
                         </b>
                         <!--End Logo icon -->
                         <!-- Logo text -->
                         <span>
-                            <!-- dark Logo text -->
-                            <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
-                        </span>
-                    </a>
+                         <!-- dark Logo text -->
+                         <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+                         </span> </a>
                 </div>
                 <!-- ============================================================== -->
                 <!-- End Logo -->
@@ -83,13 +70,10 @@
                     <!-- ============================================================== -->
                     <ul class="navbar-nav mr-auto mt-md-0 ">
                         <!-- This is  -->
-                        <li class="nav-item"> <a
-                                class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark"
-                                href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
                         <li class="nav-item hidden-sm-down">
                             <form class="app-search p-l-20">
-                                <input type="text" class="form-control" placeholder="Search for..."> <a
-                                    class="srh-btn"><i class="ti-search"></i></a>
+                                <input type="text" class="form-control" placeholder="Search for..."> <a class="srh-btn"><i class="ti-search"></i></a>
                             </form>
                         </li>
                     </ul>
@@ -98,10 +82,7 @@
                     <!-- ============================================================== -->
                     <ul class="navbar-nav my-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href=""
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
-                                    src="../assets/images/users/1.jpg" alt="user" class="profile-pic m-r-5" />Markarn
-                                Doe</a>
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../assets/images/users/1.jpg" alt="user" class="profile-pic m-r-5" />Markarn Doe</a>
                         </li>
                     </ul>
                 </div>
@@ -120,37 +101,30 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
                         <li>
-                            <a href="home.html" class="waves-effect"><i class="fa fa-clock-o m-r-10"
-                                    aria-hidden="true"></i>Dashboard</a>
+                            <a href="home.php" class="waves-effect"><i class="fa fa-clock-o m-r-10" aria-hidden="true"></i>Dashboard</a>
                         </li>
                         <li>
-                            <a href="profile.html" class="waves-effect"><i class="fa fa-user m-r-10"
-                                    aria-hidden="true"></i>Profile</a>
+                            <a href="profile.php" class="waves-effect"><i class="fa fa-user m-r-10" aria-hidden="true"></i>Profile</a>
                         </li>
                         <li>
-                            <a href="liststudents.html" class="waves-effect"><i class="fa fa-table m-r-10"
-                                    aria-hidden="true"></i>List Students</a>
+                            <a href="liststudents.php" class="waves-effect"><i class="fa fa-table m-r-10" aria-hidden="true"></i>List Students</a>
                         </li>
                         <li>
-                            <a href="student.html" class="waves-effect"><i class="fa fa-graduation-cap m-r-10"
-                                    aria-hidden="true"></i>Student</a>
+                            <a href="student.php" class="waves-effect"><i class="fa fa-graduation-cap m-r-10" aria-hidden="true"></i>Student</a>
                         </li>
                         <li>
-                            <a href="users.html" class="waves-effect"><i class="fa fa-globe m-r-10"
-                                    aria-hidden="true"></i>Users</a>
+                            <a href="users.php" class="waves-effect"><i class="fa fa-globe m-r-10" aria-hidden="true"></i>Users</a>
                         </li>
                         <li>
-                            <a href="events.html" class="waves-effect"><i class="fa fa-film m-r-10"
-                                    aria-hidden="true"></i>Events</a>
+                            <a href="events.php" class="waves-effect"><i class="fa fa-film m-r-10" aria-hidden="true"></i>Events</a>
                         </li>
                         <li>
-                            <a href="pages-error-404.html" class="waves-effect"><i class="fa fa-sign-out m-r-10"
-                                    aria-hidden="true"></i>Log Out</a>
+                            <a href="pages-error-404.php" class="waves-effect"><i class="fa fa-sign-out m-r-10" aria-hidden="true"></i>Log Out</a>
                         </li>
                     </ul>
                     <div class="text-center m-t-30">
                         <p>@ 2019 BinaryMind</p>
-                    </div>
+                    </div>  
                 </nav>
                 <!-- End Sidebar navigation -->
             </div>
@@ -172,14 +146,14 @@
                 <!-- ============================================================== -->
                 <div class="row page-titles">
                     <div class="col-md-6 col-8 align-self-center">
-                        <h3 class="text-themecolor m-b-0 m-t-0">Student</h3>
+                        <h3 class="text-themecolor m-b-0 m-t-0">Events</h3>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                            <li class="breadcrumb-item active">Student</li>
+                            <li class="breadcrumb-item active">Event</li>
                         </ol>
                     </div>
                     <div class="col-md-6 col-4 align-self-center">
-
+                        
                     </div>
                 </div>
                 <!-- ============================================================== -->
@@ -188,125 +162,110 @@
                 <!-- ============================================================== -->
                 <!-- Start Page Content -->
                 <!-- ============================================================== -->
-                <form action="">
-                    <div class="row">
-                        <!-- Column -->
-                        <div class="col-lg-4 col-xlg-3 col-md-5">
-                            <div class="card">
-                                <div class="card-block">
-                                    <center class="m-t-30">
-                                        <img src="../assets/images/users/5.jpg" class="img-circle" width="150" />
-                                        <br><br>
-                                        <input type="file" name="prof" id="">
+                <div class="row">
+                    <!-- Column -->
+                    <div class="col-lg-4 col-xlg-3 col-md-5">
+                        <div class="card">
+                            <div class="card-block" style="margin-top: -20px;">
+                                <form action="">
+                                    <br>
+                                    <input type="text" placeholder="Title"
+                                        class="form-control form-control-line">
+                                    <br><br>
+                                    <textarea placeholder="Description"
+                                    class="form-control form-control-line"></textarea>
                                         <br>
-                                        <div style="height: 15px;"></div>
+
+                                    <fieldset>
+                                        <legend>Pics</legend>
+                                        <input type="file"><br><br>
+                                    </fieldset>
+
+                                    <center class="col-lg-12">
+                                        <style>
+                                            #plusbtn{
+                                                border-radius: 50%;
+                                                border: none;
+                                                width: 40px;
+                                                height: 40px;
+                                                cursor: pointer;
+                                                box-shadow: 0px 0px 15px lightgray;
+                                                background: rgb(36, 156, 236);
+                                                transition: all 0.6s;
+                                                margin-top: -5px;
+                                            }
+                                            #plusbtn>span{color:white;}
+                                            #plusbtn:hover{box-shadow: 0px 0px 5px gray;
+                                                background: rgb(29, 135, 206);}
+                                        </style>
+                                        <button class="float-left" id="plusbtn"><span class="fa fa-plus"></span></button>
+                                        <input type="submit" value="Submit" class="btn btn-success text-center">
                                     </center>
-                                </div>
+                                </form>
                             </div>
                         </div>
-                        <!-- Column -->
-                        <!-- Column -->
-                        <div class="col-lg-8 col-xlg-9 col-md-7">
-                            <div class="card">
-                                <div class="card-block">
-                                    <div class="form-group">
-                                        <div class="col-md-12">
-                                            <input type="text" placeholder="Slug"
-                                                class="form-control form-control-line">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row pad">
-                                        <div class="col-md-6">
-                                            <input type="text" placeholder="First Name"
-                                                class="form-control form-control-line">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <input type="text" placeholder="Last Name"
-                                                class="form-control form-control-line">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="" class="col-md-12">Description</label>
-                                        <div class="col-md-12">
-                                            <textarea placeholder="" class="form-control form-control-line" name=""
-                                                id=""></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Column -->
                     </div>
-
-                    <fieldset class="col-lg-12">
-                        <legend>Social Media</legend>
-                        <div class="row ba mycard pad">
-                                <div class="col-md-4">
-                                    <div class="col-md-12">
-                                        <input type="email" placeholder="E-mail" class="form-control form-control-line">
-                                    </div>
+                    <!-- Column -->
+                    <!-- Column -->
+                    <div class="col-lg-8 col-xlg-9 col-md-7">
+                        <div class="card">
+                            <div class="card-block">
+                                <h4 class="card-title">List of Events</h4>
+                                <h6 class="card-subtitle">Select a event to edit</h6>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>First Name</th>
+                                                <th>Last Name</th>
+                                                <th>Username</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Deshmukh</td>
+                                                <td>Prohaska</td>
+                                                <td>@Genelia</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Deshmukh</td>
+                                                <td>Gaylord</td>
+                                                <td>@Ritesh</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Sanghani</td>
+                                                <td>Gusikowski</td>
+                                                <td>@Govinda</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Roshan</td>
+                                                <td>Rogahn</td>
+                                                <td>@Hritik</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Joshi</td>
+                                                <td>Hickle</td>
+                                                <td>@Maruti</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>Nigam</td>
+                                                <td>Eichmann</td>
+                                                <td>@Sonu</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="col-md-12">
-                                        <input type="text" placeholder="Linkedin" class="form-control form-control-line">
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="col-md-12">
-                                        <input type="text" placeholder="Facebook" class="form-control form-control-line">
-                                    </div>
-                                </div>
-                        </div>
-    
-                        <div class="row ba mycard pad">
-                                <div class="col-md-4">
-                                    <div class="col-md-12">
-                                        <input type="text" placeholder="Instagram" class="form-control form-control-line">
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="col-md-12">
-                                        <input type="text" placeholder="Twitter" class="form-control form-control-line">
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="col-md-12">
-                                        <input type="text" placeholder="Web Site" class="form-control form-control-line">
-                                    </div>
-                                </div>
-                        </div>
-                    </fieldset>
-
-                    <fieldset class="col-lg-12">
-                        <legend class="text-center">Poster</legend>
-                        <div class="row ba mycard pad">
-                            <input type="file" name="" id="">
-                        </div>
-                    </fieldset>
-                    
-                    <fieldset class="col-lg-12">
-                        <legend class="text-center">Pictures</legend>
-                        <div class="row ba mycard pad">
-                            <div class="col-md-6">
-                                <input type="file" name="p1" id="">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="file" name="p2" id="">
-                            </div>
-                            <br><br>
-                            <div class="col-md-6">
-                                <input type="file" name="p3" id="">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="file" name="p4" id="">
                             </div>
                         </div>
-                    </fieldset>
-
-                    <div class="col-md-12" style="margin-bottom : 30px;">
-                        <input type="submit" value="Submit" class="float-right btn btn-success" name="" id="">
                     </div>
-                </form>
+                </div>
                 <!-- ============================================================== -->
                 <!-- End PAge Content -->
                 <!-- ============================================================== -->
@@ -317,7 +276,9 @@
             <!-- ============================================================== -->
             <!-- footer -->
             <!-- ============================================================== -->
-            <footer class="footer text-center"> © 2019 BinaryMind </footer>
+            <footer class="footer text-center">
+                © 2019 BinaryMind
+            </footer>
             <!-- ============================================================== -->
             <!-- End footer -->
             <!-- ============================================================== -->
