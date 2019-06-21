@@ -1,3 +1,9 @@
+<?php
+    include_once dirname(__FILE__).'/models/Tools.php';
+    if(!Tools::isConnected()){
+        header('Location:index.php');
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,54 +46,7 @@
         <!-- ============================================================== -->
         <!-- Topbar header - style you can find in pages.scss -->
         <!-- ============================================================== -->
-        <header class="topbar">
-            <nav class="navbar top-navbar navbar-toggleable-sm navbar-light">
-                <!-- ============================================================== -->
-                <!-- Logo -->
-                <!-- ============================================================== -->
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="index.php">
-                        <!-- Logo icon -->
-                        <b>
-                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
-                            <!-- Dark Logo icon -->
-                            <img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
-                            
-                        </b>
-                        <!--End Logo icon -->
-                        <!-- Logo text -->
-                        <span>
-                         <!-- dark Logo text -->
-                         <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
-                         </span> </a>
-                </div>
-                <!-- ============================================================== -->
-                <!-- End Logo -->
-                <!-- ============================================================== -->
-                <div class="navbar-collapse">
-                    <!-- ============================================================== -->
-                    <!-- toggle and nav items -->
-                    <!-- ============================================================== -->
-                    <ul class="navbar-nav mr-auto mt-md-0 ">
-                        <!-- This is  -->
-                        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
-                        <li class="nav-item hidden-sm-down">
-                            <form class="app-search p-l-20">
-                                <input type="text" class="form-control" placeholder="Search for..."> <a class="srh-btn"><i class="ti-search"></i></a>
-                            </form>
-                        </li>
-                    </ul>
-                    <!-- ============================================================== -->
-                    <!-- User profile and search -->
-                    <!-- ============================================================== -->
-                    <ul class="navbar-nav my-lg-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../assets/images/users/1.jpg" alt="user" class="profile-pic m-r-5" />Markarn Doe</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+        <?php include_once dirname(__FILE__).'/header.php'; ?>
         <!-- ============================================================== -->
         <!-- End Topbar header -->
         <!-- ============================================================== -->
@@ -98,34 +57,7 @@
             <!-- Sidebar scroll-->
             <div class="scroll-sidebar">
                 <!-- Sidebar navigation-->
-                <nav class="sidebar-nav">
-                    <ul id="sidebarnav">
-                        <li>
-                            <a href="home.php" class="waves-effect"><i class="fa fa-clock-o m-r-10" aria-hidden="true"></i>Dashboard</a>
-                        </li>
-                        <li>
-                            <a href="profile.php" class="waves-effect"><i class="fa fa-user m-r-10" aria-hidden="true"></i>Profile</a>
-                        </li>
-                        <li>
-                            <a href="liststudents.php" class="waves-effect"><i class="fa fa-table m-r-10" aria-hidden="true"></i>List Students</a>
-                        </li>
-                        <li>
-                            <a href="student.php" class="waves-effect"><i class="fa fa-graduation-cap m-r-10" aria-hidden="true"></i>Student</a>
-                        </li>
-                        <li>
-                            <a href="users.php" class="waves-effect"><i class="fa fa-globe m-r-10" aria-hidden="true"></i>Users</a>
-                        </li>
-                        <li>
-                            <a href="events.php" class="waves-effect"><i class="fa fa-film m-r-10" aria-hidden="true"></i>Events</a>
-                        </li>
-                        <li>
-                            <a href="pages-error-404.php" class="waves-effect"><i class="fa fa-sign-out m-r-10" aria-hidden="true"></i>Log Out</a>
-                        </li>
-                    </ul>
-                    <div class="text-center m-t-30">
-                        <p>@ 2019 BinaryMind</p>
-                    </div>  
-                </nav>
+                <?php include_once dirname(__FILE__).'/nav.php'; ?>
                 <!-- End Sidebar navigation -->
             </div>
             <!-- End Sidebar scroll-->
