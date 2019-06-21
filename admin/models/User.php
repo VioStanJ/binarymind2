@@ -10,7 +10,7 @@ class User
     private $pics;
     private $statut;
 
-    public __construct(){
+    public function __construct(){
 
     }
 
@@ -154,6 +154,22 @@ class User
         return $this;
     }
 
+    public function isUser()
+    {
+        global $bdd;
+        $cmd = 'select id,fullname,phone,email,pics from users where email = :ml and pass = :ps and statut=1';
+        $rs = $bdd->prepare($cmd);
+        $m = $this->getEmail();
+        $p = $this->getPass();
+        $rs->bindValue(':ml',$m);
+        $rs->bindValue(':ps',$p);
+        $rs->execute();
+        
+        if($data = $rs->fetch()){
+            return $data;
+        }
+    }
+    
     public function getUserById($id){
 
     }

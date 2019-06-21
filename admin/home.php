@@ -1,3 +1,9 @@
+<?php
+    include_once dirname(__FILE__).'/models/Tools.php';
+    if(!Tools::isConnected()){
+        header('Location:index.php');
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -120,7 +126,7 @@
                             <a href="events.php" class="waves-effect"><i class="fa fa-film m-r-10" aria-hidden="true"></i>Events</a>
                         </li>
                         <li>
-                            <a href="pages-error-404.php" class="waves-effect"><i class="fa fa-sign-out m-r-10" aria-hidden="true"></i>Log Out</a>
+                            <a href="index.php?page=controllers/logout" class="waves-effect"><i class="fa fa-sign-out m-r-10" aria-hidden="true"></i>Log Out</a>
                         </li>
                     </ul>
                     <div class="text-center m-t-30">

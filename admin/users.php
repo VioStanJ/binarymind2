@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -299,10 +300,6 @@
     <script src="../assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
     <!--Custom JavaScript -->
     <script src="js/custom.min.js"></script>
-    <!-- google maps api -->
-    <script src="https://maps.google.com/maps/api/js?sensor=true"></script>
-    <script src="../assets/plugins/gmaps/gmaps.min.js"></script>
-    <script src="../assets/plugins/gmaps/jquery.gmaps.js"></script>
     <!-- ============================================================== -->
     <!-- Style switcher -->
     <!-- ============================================================== -->
