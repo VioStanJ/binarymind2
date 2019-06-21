@@ -7,7 +7,9 @@ CREATE TABLE users(
     pass VARCHAR(120) NOT NULL,
     phone VARCHAR(80) NOT NULL,
     pics VARCHAR(255) NOT NULL,
-    statut int(1) NOT NULL
+    statut int(1) NOT NULL,
+    saveAt date,
+    updateAt date
 );
 
 create table student(
@@ -33,6 +35,8 @@ create table student(
     p4 varchar(255),
     statut int(1) NOT NULL,
     userID int(10),
+    saveAt date,
+    updateAt date,
     CONSTRAINT pk_usr FOREIGN KEY(userID) REFERENCES users(id)
 );
 
@@ -41,6 +45,8 @@ CREATE TABLE events(
     title VARCHAR(255) NOT NULL,
     description text,
     idUser int(10) NOT NULL,
+    saveAt date,
+    updateAt date,
     CONSTRAINT pk_usee FOREIGN KEY(idUser) REFERENCES users(id)
 );
 

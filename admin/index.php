@@ -1,3 +1,8 @@
+<?php 
+  require('../DAO/dao.php');
+  $bdd  = DAO::getConnexion();
+  global $bdd;
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -21,7 +26,7 @@
                 </div>
                 <h2>Sign In</h2>
                 <div class="sp"></div>
-                <form action="" class="fw">
+                <form action="../controllers/connect.php" method="POST" class="fw">
                     <div class="form-group">
                         <input type="email" class="form-control inp"name="mail" placeholder="Email">
                     </div>
