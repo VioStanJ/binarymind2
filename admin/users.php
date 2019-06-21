@@ -168,7 +168,7 @@
                     <div class="col-lg-4 col-xlg-3 col-md-5">
                         <div class="card">
                             <div class="card-block" style="margin-top: -20px;">
-                                <form action="">
+                                <form action="" enctype="multipart/form-data">
                                     <center class="m-t-30">
                                         <img src="../assets/images/users/5.jpg" class="img-circle" width="150" />
                                         <br><br>
@@ -176,11 +176,8 @@
                                         <br>
                                     </center>
                                     <br>
-                                    <input type="text" placeholder="First Name"
+                                    <input type="text" placeholder="Full Name"
                                         class="form-control form-control-line"><br><br>
-
-                                    <input type="text" placeholder="Last Name"
-                                    class="form-control form-control-line"><br><br>
 
                                     <input type="mail" placeholder="E-mail"
                                     class="form-control form-control-line"><br><br>

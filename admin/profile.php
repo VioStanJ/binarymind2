@@ -181,7 +181,7 @@
                     <div class="col-lg-8 col-xlg-9 col-md-7">
                         <div class="card">
                             <div class="card-block">
-                                <form class="form-horizontal form-material">
+                                <form class="form-horizontal form-material" enctype="multipart/form-data">
                                     <div class="form-group">
                                         <label class="col-md-12">Change Picture</label>
                                         <div class="col-md-12">

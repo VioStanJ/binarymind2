@@ -167,7 +167,7 @@
                     <div class="col-lg-4 col-xlg-3 col-md-5">
                         <div class="card">
                             <div class="card-block" style="margin-top: -20px;">
-                                <form action="">
+                                <form action="" enctype="multipart/form-data">
                                     <br>
                                     <input type="text" placeholder="Title"
                                         class="form-control form-control-line">
