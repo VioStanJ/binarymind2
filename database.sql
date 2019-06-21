@@ -1,7 +1,7 @@
 create database binarymind;
 
 CREATE TABLE users(
-    id INT(10) NOT NULL PRIMARY KEY,
+    id INT(10) NOT NULL PRIMARY KEY auto_increment,
     fullname VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL,
     pass VARCHAR(120) NOT NULL,
@@ -10,8 +10,8 @@ CREATE TABLE users(
     statut int(1) NOT NULL
 );
 
-create table promo(
-    id int(10) not null primary key,
+create table student(
+    id int(10) not null primary key auto_increment,
     nom varchar(120),
     prenom varchar(255),
     slug varchar(180),
@@ -35,3 +35,12 @@ create table promo(
     userID int(10),
     CONSTRAINT pk_usr FOREIGN KEY(userID) REFERENCES users(id)
 );
+
+CREATE TABLE events(
+    id SMALLINT(11) NOT NULL PRIMARY KEY auto_increment,
+    title VARCHAR(255) NOT NULL,
+    description text,
+    idUser int(10) NOT NULL,
+    CONSTRAINT pk_usee FOREIGN KEY(idUser) REFERENCES users(id)
+);
+
